@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Download, Moon, Sun, ExternalLink, Code, Database, BarChart3, Brain } from "lucide-react";
+import { Mail, Phone, MapPin, Download, Moon, Sun, Code, Database, BarChart3, Brain, Users, Zap } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Index() {
@@ -16,20 +16,20 @@ export default function Index() {
   }, [darkMode]);
 
   const skills = {
-    "Analytical & Visualization": {
-      icon: <BarChart3 className="w-6 h-6" />,
+    "Analytics & Visualization": {
+      icon: <BarChart3 className="w-5 h-5" />,
       items: ["Microsoft Power BI", "Excel", "Python", "Microsoft Azure"]
     },
-    "Programming Languages": {
-      icon: <Code className="w-6 h-6" />,
+    "Programming": {
+      icon: <Code className="w-5 h-5" />,
       items: ["SQL", "Python (Pandas, NumPy, Matplotlib)", "R (Shiny)"]
     },
     "Databases": {
-      icon: <Database className="w-6 h-6" />,
+      icon: <Database className="w-5 h-5" />,
       items: ["Microsoft SQL Server", "MySQL"]
     },
-    "AI & Analytics": {
-      icon: <Brain className="w-6 h-6" />,
+    "AI & Machine Learning": {
+      icon: <Brain className="w-5 h-5" />,
       items: ["Machine Learning", "Predictive Modeling", "Statistical Analysis", "Data Mining"]
     }
   };
@@ -107,35 +107,26 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-background relative overflow-x-hidden">
-      {/* Animated Background */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-red-950/30 to-slate-900"></div>
-        <div className="absolute top-0 -left-4 w-72 h-72 bg-red-500/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-0 -right-4 w-72 h-72 bg-red-600/25 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-red-400/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-      </div>
-
+    <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="font-bold text-xl bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
+            <div className="font-semibold text-xl">
               Kaustubh Ramekar
             </div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-foreground hover:text-red-400 transition-colors">About</a>
-              <a href="#skills" className="text-foreground hover:text-red-400 transition-colors">Skills</a>
-              <a href="#experience" className="text-foreground hover:text-red-400 transition-colors">Experience</a>
-              <a href="#voluntary" className="text-foreground hover:text-red-400 transition-colors">Voluntary</a>
-              <a href="#education" className="text-foreground hover:text-red-400 transition-colors">Education</a>
-              <a href="#contact" className="text-foreground hover:text-red-400 transition-colors">Contact</a>
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</a>
+              <a href="#skills" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Skills</a>
+              <a href="#experience" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Experience</a>
+              <a href="#voluntary" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Voluntary</a>
+              <a href="#education" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Education</a>
+              <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Contact</a>
             </div>
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setDarkMode(!darkMode)}
-              className="hover:bg-red-500/20"
             >
               {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
@@ -144,55 +135,43 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center">
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl">
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-red-500 to-red-700 flex items-center justify-center text-4xl font-bold text-white mb-6 shadow-2xl shadow-red-500/25">
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-2xl font-bold text-primary mb-6 border border-primary/20">
                 KR
               </div>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-700 bg-clip-text text-transparent">
-                Kaustubh Ramekar
-              </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+              Hi, I'm <span className="text-primary">Kaustubh</span>
             </h1>
-            <p className="text-2xl sm:text-3xl text-red-400 mb-6 font-semibold">
-              BI & Data Analyst
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              A passionate BI & Data Analyst with <span className="font-semibold text-foreground">5+ years</span> of experience transforming complex data into actionable business insights through Power BI, Python, and advanced analytics.
             </p>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
-              Transforming complex data into actionable insights with <span className="text-red-400 font-semibold">5+ years</span> of 
-              hands-on experience in Power BI development, Python analytics, and cutting-edge visualization solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            
+            <div className="flex flex-col sm:flex-row gap-6 mb-8 text-sm">
               <div className="flex items-center gap-2 text-muted-foreground">
-                <MapPin size={16} className="text-red-400" />
+                <MapPin size={16} />
                 <span>London (ready to relocate)</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Phone size={16} className="text-red-500" />
+                <Phone size={16} />
                 <span>07572644863</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Mail size={16} className="text-red-600" />
+                <Mail size={16} />
                 <span>kramekar1@gmail.com</span>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                onClick={handleDownloadResume} 
-                size="lg" 
-                className="bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white shadow-lg shadow-red-500/25 hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300"
-              >
-                <Download className="mr-2" size={16} />
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button onClick={handleDownloadResume} size="lg">
+                <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-red-500/50 text-red-400 hover:bg-red-500/10 hover:border-red-400"
-              >
-                <Mail className="mr-2" size={16} />
+              <Button variant="outline" size="lg">
+                <Mail className="mr-2 h-4 w-4" />
                 Get In Touch
               </Button>
             </div>
@@ -201,47 +180,31 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-              About Me
-            </span>
-          </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate BI & Data Analyst who transforms complex datasets into compelling stories that drive business decisions. 
-                With expertise spanning multiple industries, I bridge the gap between raw data and strategic insights.
+      <section id="about" className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight mb-8">About</h2>
+            <div className="prose prose-neutral dark:prose-invert max-w-none">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                I specialize in bridging the gap between complex data and strategic business decisions. My expertise lies in creating sophisticated Power BI solutions, optimizing SQL databases, and developing Python-based analytics that scale with business growth.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                My specialty lies in creating sophisticated Power BI solutions, optimizing SQL databases, and developing Python-based 
-                analytics that scale with business growth. Every dashboard I build tells a story that matters.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                Every dashboard I build tells a story that matters, helping organizations across multiple industries make data-driven decisions that drive innovation and growth.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <Badge variant="secondary" className="bg-red-500/20 text-red-400 border-red-500/30">Power BI Expert</Badge>
-                <Badge variant="secondary" className="bg-red-600/20 text-red-300 border-red-600/30">SQL Professional</Badge>
-                <Badge variant="secondary" className="bg-red-700/20 text-red-200 border-red-700/30">Python Developer</Badge>
-                <Badge variant="secondary" className="bg-red-400/20 text-red-500 border-red-400/30">R Shiny</Badge>
-                <Badge variant="secondary" className="bg-red-800/20 text-red-300 border-red-800/30">Data Visualization</Badge>
-              </div>
             </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-red-500/10 via-red-600/10 to-red-700/10 rounded-2xl p-8 text-center backdrop-blur-sm border border-red-500/20 shadow-2xl">
-                <div className="grid grid-cols-1 gap-6">
-                  <div className="group hover:scale-105 transition-transform duration-300">
-                    <div className="text-5xl font-bold bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent mb-2">5+</div>
-                    <div className="text-muted-foreground">Years of Experience</div>
-                  </div>
-                  <div className="group hover:scale-105 transition-transform duration-300">
-                    <div className="text-4xl font-bold bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent mb-2">100+</div>
-                    <div className="text-muted-foreground">Dashboards Created</div>
-                  </div>
-                  <div className="group hover:scale-105 transition-transform duration-300">
-                    <div className="text-4xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent mb-2">15+</div>
-                    <div className="text-muted-foreground">Projects Delivered</div>
-                  </div>
-                </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                <div className="text-sm text-muted-foreground">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">100+</div>
+                <div className="text-sm text-muted-foreground">Dashboards Created</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                <div className="text-sm text-muted-foreground">Projects Delivered</div>
               </div>
             </div>
           </div>
@@ -249,30 +212,24 @@ export default function Index() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
-              Skills & Expertise
-            </span>
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Skills & Expertise</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {Object.entries(skills).map(([category, { icon, items }]) => (
-              <Card key={category} className="h-full group hover:scale-105 transition-all duration-300 bg-card/50 backdrop-blur-sm border-red-500/20 hover:border-red-400/40 hover:shadow-2xl hover:shadow-red-500/10">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="text-red-400 group-hover:text-red-300 transition-colors">
-                      {icon}
-                    </div>
-                    <CardTitle className="text-lg group-hover:text-red-300 transition-colors">{category}</CardTitle>
+              <Card key={category} className="border-0 shadow-sm">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3">
+                    <div className="text-primary">{icon}</div>
+                    <CardTitle className="text-lg font-semibold">{category}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="space-y-2">
                     {items.map((skill) => (
-                      <Badge key={skill} variant="outline" className="text-xs bg-red-500/10 border-red-500/30 text-red-300 hover:bg-red-500/20 transition-colors">
+                      <div key={skill} className="text-sm text-muted-foreground">
                         {skill}
-                      </Badge>
+                      </div>
                     ))}
                   </div>
                 </CardContent>
@@ -283,35 +240,30 @@ export default function Index() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">
-              Professional Experience
-            </span>
-          </h2>
+      <section id="experience" className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Experience</h2>
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card key={index} className="relative group hover:scale-[1.02] transition-all duration-300 bg-card/50 backdrop-blur-sm border-red-500/20 hover:border-red-400/40 hover:shadow-2xl hover:shadow-red-500/10">
-                <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-red-700/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <CardHeader className="relative">
+              <Card key={index} className="border-0 shadow-sm">
+                <CardHeader>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <div>
-                      <CardTitle className="text-xl group-hover:text-red-400 transition-colors">{exp.title}</CardTitle>
-                      <CardDescription className="text-lg font-medium text-red-400">
+                      <CardTitle className="text-xl font-semibold">{exp.title}</CardTitle>
+                      <CardDescription className="text-base font-medium">
                         {exp.company} • {exp.location}
                       </CardDescription>
                     </div>
-                    <Badge variant="secondary" className="w-fit bg-red-500/20 text-red-400 border-red-500/30">
+                    <Badge variant="secondary" className="w-fit">
                       {exp.period}
                     </Badge>
                   </div>
                 </CardHeader>
-                <CardContent className="relative">
-                  <ul className="space-y-3">
+                <CardContent>
+                  <ul className="space-y-2">
                     {exp.highlights.map((highlight, idx) => (
-                      <li key={idx} className="text-muted-foreground flex items-start gap-3 group-hover:text-foreground transition-colors">
-                        <span className="text-red-400 mt-2 text-lg">▸</span>
+                      <li key={idx} className="text-muted-foreground flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 flex-shrink-0"></div>
                         <span>{highlight}</span>
                       </li>
                     ))}
@@ -324,77 +276,38 @@ export default function Index() {
       </section>
 
       {/* Voluntary Experience Section */}
-      <section id="voluntary" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30 relative">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">
-            <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
-              Voluntary Experience
-            </span>
-          </h2>
-          <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto mb-12 leading-relaxed">
-            Alongside my professional career, I actively contribute to the growth and inclusivity of the UK's digital technology sector
-            through leadership roles in prominent community-driven initiatives. These efforts reflect my ongoing commitment to fostering
-            technical knowledge exchange, peer learning, and diversity within the broader tech ecosystem.
+      <section id="voluntary" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Voluntary Experience</h2>
+          <p className="text-lg text-muted-foreground mb-12 max-w-4xl">
+            I actively contribute to the growth and inclusivity of the UK's digital technology sector through leadership roles in prominent community-driven initiatives, fostering technical knowledge exchange and diversity within the tech ecosystem.
           </p>
           <div className="space-y-8">
-            <Card className="relative group hover:scale-[1.02] transition-all duration-300 bg-card/50 backdrop-blur-sm border-red-500/20 hover:border-red-400/40 hover:shadow-2xl hover:shadow-red-500/10">
-              <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-red-700/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardHeader className="relative">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                  <div>
-                    <CardTitle className="text-xl group-hover:text-red-400 transition-colors">Assistant Organiser</CardTitle>
-                    <CardDescription className="text-lg font-medium text-red-400">
-                      AWS User Group UK
-                    </CardDescription>
-                  </div>
-                  <Badge variant="secondary" className="w-fit bg-red-500/20 text-red-400 border-red-500/30">
-                    Volunteer Role
-                  </Badge>
-                </div>
+            <Card className="border-0 shadow-sm">
+              <CardHeader>
+                <CardTitle className="text-xl font-semibold">Assistant Organiser</CardTitle>
+                <CardDescription className="text-base font-medium">AWS User Group UK</CardDescription>
               </CardHeader>
-              <CardContent className="relative">
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  As an Assistant Organiser for the AWS User Group UK, I help coordinate events aimed at sharing deep technical insights,
-                  practical case studies, and real-world AWS implementation stories. My role includes supporting speakers—especially
-                  those from underrepresented backgrounds—curating session content, and maintaining strong community engagement.
-                  This work is entirely voluntary and reflects my passion for improving cloud computing literacy across all skill levels.
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed">
+                  I help coordinate events aimed at sharing deep technical insights, practical case studies, and real-world AWS implementation stories. My role includes supporting speakers—especially those from underrepresented backgrounds—curating session content, and maintaining strong community engagement. This work reflects my passion for improving cloud computing literacy across all skill levels.
                 </p>
-                <div className="flex items-center gap-2 text-sm text-red-400">
-                  <span className="font-medium">Organiser Contact:</span>
-                  <span>Paul Spratley</span>
-                </div>
               </CardContent>
             </Card>
 
-            <Card className="relative group hover:scale-[1.02] transition-all duration-300 bg-card/50 backdrop-blur-sm border-red-500/20 hover:border-red-400/40 hover:shadow-2xl hover:shadow-red-500/10">
-              <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-red-700/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardHeader className="relative">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                  <div>
-                    <CardTitle className="text-xl group-hover:text-red-400 transition-colors">Lead Organiser</CardTitle>
-                    <CardDescription className="text-lg font-medium text-red-400">
-                      AI Signals Meetup
-                    </CardDescription>
-                  </div>
-                  <Badge variant="secondary" className="w-fit bg-red-500/20 text-red-400 border-red-500/30">
-                    Community Leader
-                  </Badge>
-                </div>
+            <Card className="border-0 shadow-sm">
+              <CardHeader>
+                <CardTitle className="text-xl font-semibold">Lead Organiser</CardTitle>
+                <CardDescription className="text-base font-medium">AI Signals Meetup</CardDescription>
               </CardHeader>
-              <CardContent className="relative">
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  I serve as the Lead Organiser for AI Signals, a dynamic community focused on applied AI. Formerly known as AIDLE,
-                  the group has grown to over 3,500 members and regularly features practitioners from industry, academia, and independent projects.
-                  Topics span fairness in AI, sustainable systems, and practical deployment strategies.
-                </p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  I'm responsible for end-to-end event execution—from speaker curation to hosting—ensuring each session delivers meaningful
-                  insights and encourages interdisciplinary collaboration. This initiative represents a personal commitment to driving
-                  transparent, applied AI innovation in the UK.
-                </p>
-                <div className="flex items-center gap-2 text-sm text-red-400">
-                  <span className="font-medium">Organiser Contact:</span>
-                  <span>Hugh Evans</span>
+              <CardContent>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    I serve as the Lead Organiser for AI Signals, a dynamic community focused on applied AI. Formerly known as AIDLE, the group has grown to over 3,500 members and regularly features practitioners from industry, academia, and independent projects.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    I'm responsible for end-to-end event execution—from speaker curation to hosting—ensuring each session delivers meaningful insights and encourages interdisciplinary collaboration. This initiative represents a personal commitment to driving transparent, applied AI innovation in the UK.
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -403,22 +316,18 @@ export default function Index() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-16 px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-red-700 to-red-900 bg-clip-text text-transparent">
-              Education
-            </span>
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <section id="education" className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Education</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
             {education.map((edu, index) => (
-              <Card key={index} className="text-center group hover:scale-105 transition-all duration-300 bg-card/50 backdrop-blur-sm border-red-600/20 hover:border-red-500/40 hover:shadow-2xl hover:shadow-red-600/10">
+              <Card key={index} className="border-0 shadow-sm">
                 <CardHeader>
-                  <CardTitle className="text-xl group-hover:text-red-400 transition-colors">{edu.degree}</CardTitle>
-                  <CardDescription className="text-lg text-red-400">{edu.institution}</CardDescription>
+                  <CardTitle className="text-xl font-semibold">{edu.degree}</CardTitle>
+                  <CardDescription className="text-base">{edu.institution}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Badge variant="secondary" className="text-lg px-6 py-3 bg-red-600/20 text-red-400 border-red-600/30">
+                  <Badge variant="secondary" className="text-sm">
                     {edu.year}
                   </Badge>
                 </CardContent>
@@ -429,42 +338,31 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">
-            <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
-              Get In Touch
-            </span>
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+      <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/50">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Get In Touch</h2>
+          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
             Ready to transform your data into powerful insights? Let's connect and explore how we can drive your business forward together.
           </p>
+          
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-            <div className="flex items-center gap-3 text-muted-foreground group hover:text-red-400 transition-colors">
-              <Mail size={24} className="text-red-400" />
-              <span className="text-lg">kramekar1@gmail.com</span>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Mail size={20} />
+              <span>kramekar1@gmail.com</span>
             </div>
-            <div className="flex items-center gap-3 text-muted-foreground group hover:text-red-500 transition-colors">
-              <Phone size={24} className="text-red-500" />
-              <span className="text-lg">07572644863</span>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Phone size={20} />
+              <span>07572644863</span>
             </div>
           </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              onClick={() => window.location.href = 'mailto:kramekar1@gmail.com'}
-              className="bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white shadow-lg shadow-red-500/25 hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300"
-            >
-              <Mail className="mr-2" size={16} />
+            <Button size="lg" onClick={() => window.location.href = 'mailto:kramekar1@gmail.com'}>
+              <Mail className="mr-2 h-4 w-4" />
               Send Email
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              onClick={handleDownloadResume}
-              className="border-red-500/50 text-red-400 hover:bg-red-500/10 hover:border-red-400"
-            >
-              <Download className="mr-2" size={16} />
+            <Button variant="outline" size="lg" onClick={handleDownloadResume}>
+              <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Button>
           </div>
@@ -472,45 +370,12 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-red-500/20 relative">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="mb-4">
-            <span className="text-2xl font-bold bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-              Kaustubh Ramekar
-            </span>
-          </div>
-          <p className="text-sm text-red-400 mb-2">
-            Currently on skilled worker visa - Visa sponsorship required
-          </p>
-          <p className="text-muted-foreground">&copy; 2024 Kaustubh Ramekar. All rights reserved.</p>
+      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t">
+        <div className="max-w-7xl mx-auto text-center text-sm text-muted-foreground">
+          <p className="mb-2">Currently on skilled worker visa - Visa sponsorship required</p>
+          <p>&copy; 2024 Kaustubh Ramekar. All rights reserved.</p>
         </div>
       </footer>
-
-      <style jsx>{`
-        @keyframes blob {
-          0% {
-            transform: translate(0px, 0px) scale(1);
-          }
-          33% {
-            transform: translate(30px, -50px) scale(1.1);
-          }
-          66% {
-            transform: translate(-20px, 20px) scale(0.9);
-          }
-          100% {
-            transform: translate(0px, 0px) scale(1);
-          }
-        }
-        .animate-blob {
-          animation: blob 7s infinite;
-        }
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-        .animation-delay-4000 {
-          animation-delay: 4s;
-        }
-      `}</style>
     </div>
   );
 }
