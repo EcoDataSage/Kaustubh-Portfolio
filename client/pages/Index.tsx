@@ -278,7 +278,7 @@ export default function Index() {
       </section>
 
       {/* Voluntary Experience Section */}
-      <section id="voluntary" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/50">
+      <section id="voluntary" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-l from-muted/30 to-purple-900/10">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Voluntary Experience</h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-4xl">
