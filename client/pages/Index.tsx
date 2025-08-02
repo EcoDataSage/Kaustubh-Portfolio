@@ -253,7 +253,7 @@ export default function Index() {
                     <div>
                       <CardTitle className="text-xl font-semibold">{exp.title}</CardTitle>
                       <CardDescription className="text-base font-medium">
-                        {exp.company} ��� {exp.location}
+                        {exp.company} • {exp.location}
                       </CardDescription>
                     </div>
                     <Badge variant="secondary" className="w-fit">
@@ -300,10 +300,13 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-sm">
+            <Card className="border-0 shadow-sm bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-xl font-semibold">Organiser</CardTitle>
-                <CardDescription className="text-base font-medium">AI Signals Meetup</CardDescription>
+                <CardTitle className="text-xl font-semibold flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-emerald-400"></div>
+                  Organiser
+                </CardTitle>
+                <CardDescription className="text-base font-medium text-emerald-400">AI Signals Meetup</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
