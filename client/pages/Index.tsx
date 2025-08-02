@@ -212,15 +212,17 @@ export default function Index() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/50">
+      <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-muted/30 to-slate-800/10">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Skills & Expertise</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {Object.entries(skills).map(([category, { icon, items }]) => (
-              <Card key={category} className="border-0 shadow-sm">
+            {Object.entries(skills).map(([category, { icon, items }], index) => {
+              const colors = ['text-sky-400', 'text-emerald-400', 'text-violet-400', 'text-orange-400'];
+              return (
+              <Card key={category} className="border-0 shadow-sm bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
                 <CardHeader className="pb-3">
                   <div className="flex items-center gap-3">
-                    <div className="text-primary">{icon}</div>
+                    <div className={colors[index % colors.length]}>{icon}</div>
                     <CardTitle className="text-lg font-semibold">{category}</CardTitle>
                   </div>
                 </CardHeader>
@@ -234,7 +236,7 @@ export default function Index() {
                   </div>
                 </CardContent>
               </Card>
-            ))}
+            )})}
           </div>
         </div>
       </section>
