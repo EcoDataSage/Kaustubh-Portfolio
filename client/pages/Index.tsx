@@ -399,10 +399,10 @@ export default function Index() {
               Kaustubh Ramekar
             </span>
           </div>
-          <p className="text-muted-foreground mb-2">&copy; 2024 Kaustubh Ramekar. All rights reserved.</p>
-          <p className="text-sm text-red-400">
+          <p className="text-sm text-red-400 mb-2">
             Currently on skilled worker visa - Visa sponsorship required
           </p>
+          <p className="text-muted-foreground">&copy; 2024 Kaustubh Ramekar. All rights reserved.</p>
         </div>
       </footer>
 
