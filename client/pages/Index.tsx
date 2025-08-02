@@ -139,8 +139,12 @@ export default function Index() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
             <div className="mb-8">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-sky-400 to-indigo-600 flex items-center justify-center text-2xl font-bold text-white mb-6 shadow-lg">
-                KR
+              <div className="w-20 h-20 rounded-full overflow-hidden bg-gradient-to-br from-sky-400 to-indigo-600 p-0.5 mb-6 shadow-lg">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2F4c354918fa224a0e8c9d5ac750c3f353?format=webp&width=800"
+                  alt="Kaustubh Ramekar"
+                  className="w-full h-full rounded-full object-cover object-center"
+                />
               </div>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
