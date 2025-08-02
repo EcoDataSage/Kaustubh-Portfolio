@@ -166,11 +166,11 @@ export default function Index() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={handleDownloadResume} size="lg">
+              <Button onClick={handleDownloadResume} size="lg" className="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700">
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="border-sky-400/50 text-sky-400 hover:bg-sky-400/10">
                 <Mail className="mr-2 h-4 w-4" />
                 Get In Touch
               </Button>
