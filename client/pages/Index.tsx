@@ -346,7 +346,7 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/50">
+      <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-tr from-muted/30 to-indigo-900/10">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Get In Touch</h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
