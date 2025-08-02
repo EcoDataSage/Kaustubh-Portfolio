@@ -107,7 +107,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-slate-800/20">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
