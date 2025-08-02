@@ -127,6 +127,7 @@ export default function Index() {
               <a href="#about" className="text-foreground hover:text-red-400 transition-colors">About</a>
               <a href="#skills" className="text-foreground hover:text-red-400 transition-colors">Skills</a>
               <a href="#experience" className="text-foreground hover:text-red-400 transition-colors">Experience</a>
+              <a href="#voluntary" className="text-foreground hover:text-red-400 transition-colors">Voluntary</a>
               <a href="#education" className="text-foreground hover:text-red-400 transition-colors">Education</a>
               <a href="#contact" className="text-foreground hover:text-red-400 transition-colors">Contact</a>
             </div>
