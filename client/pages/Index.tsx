@@ -290,23 +290,23 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  I help coordinate events aimed at sharing deep technical insights, practical case studies, and real-world AWS implementation stories. My role includes supporting speakers—especially those from underrepresented backgrounds—curating session content, and maintaining strong community engagement. This work reflects my passion for improving cloud computing literacy across all skill levels.
+                  I help coordinate events aimed at sharing deep technical insights, practical case studies, and real-world AWS implementation stories. My role includes supporting speakers, especially those from underrepresented backgrounds, curating session content, and maintaining strong community engagement. This work reflects my passion for improving cloud computing literacy across all skill levels.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-0 shadow-sm">
               <CardHeader>
-                <CardTitle className="text-xl font-semibold">Lead Organiser</CardTitle>
+                <CardTitle className="text-xl font-semibold">Organiser</CardTitle>
                 <CardDescription className="text-base font-medium">AI Signals Meetup</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    I serve as the Lead Organiser for AI Signals, a dynamic community focused on applied AI. Formerly known as AIDLE, the group has grown to over 3,500 members and regularly features practitioners from industry, academia, and independent projects.
+                    I serve as the Organiser for AI Signals, a dynamic community focused on applied AI. Formerly known as AIDLE, the group has grown to over 3,500 members and regularly features practitioners from industry, academia, and independent projects.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    I'm responsible for end-to-end event execution—from speaker curation to hosting—ensuring each session delivers meaningful insights and encourages interdisciplinary collaboration. This initiative represents a personal commitment to driving transparent, applied AI innovation in the UK.
+                    I'm responsible for end to end event execution, from speaker curation to hosting, ensuring each session delivers meaningful insights and encourages interdisciplinary collaboration. This initiative represents a personal commitment to driving transparent, applied AI innovation in the UK.
                   </p>
                 </div>
               </CardContent>
