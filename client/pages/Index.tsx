@@ -323,6 +323,85 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Voluntary Experience Section */}
+      <section id="voluntary" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30 relative">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-8">
+            <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
+              Voluntary Experience
+            </span>
+          </h2>
+          <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto mb-12 leading-relaxed">
+            Alongside my professional career, I actively contribute to the growth and inclusivity of the UK's digital technology sector
+            through leadership roles in prominent community-driven initiatives. These efforts reflect my ongoing commitment to fostering
+            technical knowledge exchange, peer learning, and diversity within the broader tech ecosystem.
+          </p>
+          <div className="space-y-8">
+            <Card className="relative group hover:scale-[1.02] transition-all duration-300 bg-card/50 backdrop-blur-sm border-red-500/20 hover:border-red-400/40 hover:shadow-2xl hover:shadow-red-500/10">
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-red-700/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardHeader className="relative">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                  <div>
+                    <CardTitle className="text-xl group-hover:text-red-400 transition-colors">Assistant Organiser</CardTitle>
+                    <CardDescription className="text-lg font-medium text-red-400">
+                      AWS User Group UK
+                    </CardDescription>
+                  </div>
+                  <Badge variant="secondary" className="w-fit bg-red-500/20 text-red-400 border-red-500/30">
+                    Volunteer Role
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="relative">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  As an Assistant Organiser for the AWS User Group UK, I help coordinate events aimed at sharing deep technical insights,
+                  practical case studies, and real-world AWS implementation stories. My role includes supporting speakers—especially
+                  those from underrepresented backgrounds—curating session content, and maintaining strong community engagement.
+                  This work is entirely voluntary and reflects my passion for improving cloud computing literacy across all skill levels.
+                </p>
+                <div className="flex items-center gap-2 text-sm text-red-400">
+                  <span className="font-medium">Organiser Contact:</span>
+                  <span>Paul Spratley</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="relative group hover:scale-[1.02] transition-all duration-300 bg-card/50 backdrop-blur-sm border-red-500/20 hover:border-red-400/40 hover:shadow-2xl hover:shadow-red-500/10">
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-red-700/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardHeader className="relative">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                  <div>
+                    <CardTitle className="text-xl group-hover:text-red-400 transition-colors">Lead Organiser</CardTitle>
+                    <CardDescription className="text-lg font-medium text-red-400">
+                      AI Signals Meetup
+                    </CardDescription>
+                  </div>
+                  <Badge variant="secondary" className="w-fit bg-red-500/20 text-red-400 border-red-500/30">
+                    Community Leader
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="relative">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  I serve as the Lead Organiser for AI Signals, a dynamic community focused on applied AI. Formerly known as AIDLE,
+                  the group has grown to over 3,500 members and regularly features practitioners from industry, academia, and independent projects.
+                  Topics span fairness in AI, sustainable systems, and practical deployment strategies.
+                </p>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  I'm responsible for end-to-end event execution—from speaker curation to hosting—ensuring each session delivers meaningful
+                  insights and encourages interdisciplinary collaboration. This initiative represents a personal commitment to driving
+                  transparent, applied AI innovation in the UK.
+                </p>
+                <div className="flex items-center gap-2 text-sm text-red-400">
+                  <span className="font-medium">Organiser Contact:</span>
+                  <span>Hugh Evans</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Education Section */}
       <section id="education" className="py-16 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-6xl mx-auto">
