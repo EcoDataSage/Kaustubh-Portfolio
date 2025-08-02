@@ -141,7 +141,7 @@ export default function Index() {
             <div className="mb-8">
               <div className="w-20 h-20 rounded-full overflow-hidden bg-gradient-to-br from-sky-400 to-indigo-600 p-0.5 mb-6 shadow-lg">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2F4c354918fa224a0e8c9d5ac750c3f353?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Fccc07439f6ee4bf3a6f0032541e0181e?format=webp&width=800"
                   alt="Kaustubh Ramekar"
                   className="w-full h-full rounded-full object-cover object-center"
                 />
