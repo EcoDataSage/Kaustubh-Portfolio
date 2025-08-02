@@ -153,7 +153,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-6 mb-8 text-sm">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin size={16} />
-                <span>London (ready to relocate)</span>
+                <span>London</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Phone size={16} />
