@@ -139,12 +139,12 @@ export default function Index() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
             <div className="mb-8">
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-2xl font-bold text-primary mb-6 border border-primary/20">
+              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-sky-400 to-indigo-600 flex items-center justify-center text-2xl font-bold text-white mb-6 shadow-lg">
                 KR
               </div>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Hi, I'm <span className="text-primary">Kaustubh</span>
+              Hi, I'm <span className="bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">Kaustubh</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               A passionate BI & Data Analyst with <span className="font-semibold text-foreground">5+ years</span> of experience transforming complex data into actionable business insights through Power BI, Python, and advanced analytics.
