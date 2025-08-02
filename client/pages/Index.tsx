@@ -365,11 +365,11 @@ export default function Index() {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={() => window.location.href = 'mailto:kramekar1@gmail.com'}>
+            <Button size="lg" onClick={() => window.location.href = 'mailto:kramekar1@gmail.com'} className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700">
               <Mail className="mr-2 h-4 w-4" />
               Send Email
             </Button>
-            <Button variant="outline" size="lg" onClick={handleDownloadResume}>
+            <Button variant="outline" size="lg" onClick={handleDownloadResume} className="border-emerald-400/50 text-emerald-400 hover:bg-emerald-400/10">
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Button>
