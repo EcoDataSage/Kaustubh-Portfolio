@@ -253,7 +253,7 @@ export default function Index() {
                     <div>
                       <CardTitle className="text-xl font-semibold">{exp.title}</CardTitle>
                       <CardDescription className="text-base font-medium">
-                        {exp.company} • {exp.location}
+                        {exp.company} ��� {exp.location}
                       </CardDescription>
                     </div>
                     <Badge variant="secondary" className="w-fit">
@@ -285,10 +285,13 @@ export default function Index() {
             I actively contribute to the growth and inclusivity of the UK's digital technology sector through leadership roles in prominent community-driven initiatives, fostering technical knowledge exchange and diversity within the tech ecosystem.
           </p>
           <div className="space-y-8">
-            <Card className="border-0 shadow-sm">
+            <Card className="border-0 shadow-sm bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-xl font-semibold">Assistant Organiser</CardTitle>
-                <CardDescription className="text-base font-medium">AWS User Group UK</CardDescription>
+                <CardTitle className="text-xl font-semibold flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-orange-400"></div>
+                  Assistant Organiser
+                </CardTitle>
+                <CardDescription className="text-base font-medium text-orange-400">AWS User Group UK</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
