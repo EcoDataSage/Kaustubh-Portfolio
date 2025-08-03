@@ -422,7 +422,7 @@ export default function Index() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-4">
                   I help coordinate events aimed at sharing deep technical
                   insights, practical case studies, and real-world AWS
                   implementation stories. My role includes supporting speakers,
@@ -431,6 +431,20 @@ export default function Index() {
                   This work reflects my passion for improving cloud computing
                   literacy across all skill levels.
                 </p>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() =>
+                    window.open(
+                      "https://www.meetup.com/awsuguk/members/?op=leaders",
+                      "_blank",
+                    )
+                  }
+                  className="border-orange-400/50 text-orange-400 hover:bg-orange-400/10"
+                >
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Learn More
+                </Button>
               </CardContent>
             </Card>
 
