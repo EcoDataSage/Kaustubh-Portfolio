@@ -475,6 +475,20 @@ export default function Index() {
                     commitment to driving transparent, applied AI innovation in
                     the UK.
                   </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() =>
+                      window.open(
+                        "https://www.meetup.com/ai-signals-community/members/?op=leaders",
+                        "_blank",
+                      )
+                    }
+                    className="border-emerald-400/50 text-emerald-400 hover:bg-emerald-400/10"
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Learn More
+                  </Button>
                 </div>
               </CardContent>
             </Card>
