@@ -554,25 +554,6 @@ export default function Index() {
                 </div>
               </div>
             </Card>
-
-            {/* Additional Projects Teaser */}
-            <div className="text-center">
-              <p className="text-muted-foreground mb-6">
-                Want to see more of my BI and analytics work?
-              </p>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() =>
-                  (window.location.href =
-                    "mailto:kramekar1@gmail.com?subject=Portfolio%20Discussion")
-                }
-                className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10"
-              >
-                <Mail className="mr-2 h-4 w-4" />
-                Let's Discuss My Work
-              </Button>
-            </div>
           </div>
         </div>
       </section>
