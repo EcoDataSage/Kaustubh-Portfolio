@@ -419,56 +419,47 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="max-w-6xl mx-auto">
             {/* Featured Project */}
             <Card className="border-0 shadow-xl bg-card/60 backdrop-blur-sm overflow-hidden">
-              <div className="grid lg:grid-cols-2 gap-0">
+              <div className="grid lg:grid-cols-5 gap-0">
                 {/* Project Image */}
-                <div className="relative group">
+                <div className="relative group lg:col-span-3">
                   {/* Mac Window Frame */}
-                  <div className="aspect-video lg:aspect-square relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-lg shadow-2xl">
+                  <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-lg shadow-2xl">
                     {/* Window Title Bar */}
-                    <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-4 py-3 border-b border-slate-300 dark:border-slate-600">
+                    <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-3 py-2 border-b border-slate-300 dark:border-slate-600">
                       <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2">
-                          <div className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-600 transition-colors cursor-pointer"></div>
-                          <div className="w-3 h-3 rounded-full bg-yellow-500 hover:bg-yellow-600 transition-colors cursor-pointer"></div>
-                          <div className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600 transition-colors cursor-pointer"></div>
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-red-500 hover:bg-red-600 transition-colors cursor-pointer"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500 hover:bg-yellow-600 transition-colors cursor-pointer"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-green-500 hover:bg-green-600 transition-colors cursor-pointer"></div>
                         </div>
-                        <div className="text-sm font-medium text-slate-600 dark:text-slate-300 absolute left-1/2 transform -translate-x-1/2">
-                          Power BI Service - Visit Analytics Dashboard
+                        <div className="text-xs font-medium text-slate-600 dark:text-slate-300 absolute left-1/2 transform -translate-x-1/2">
+                          Power BI Service
                         </div>
-                        <div className="w-16"></div>{" "}
-                        {/* Spacer for centering */}
+                        <div className="w-12"></div>
                       </div>
                     </div>
 
                     {/* Browser/App Navigation Bar */}
-                    <div className="bg-slate-50 dark:bg-slate-800 px-4 py-2 border-b border-slate-200 dark:border-slate-700">
+                    <div className="bg-slate-50 dark:bg-slate-800 px-3 py-1.5 border-b border-slate-200 dark:border-slate-700">
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1">
-                          <div className="w-6 h-6 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
-                            <svg
-                              className="w-3 h-3 text-slate-500"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                clipRule="evenodd"
-                              />
+                          <div className="w-5 h-5 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
+                            <svg className="w-2.5 h-2.5 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                             </svg>
                           </div>
                         </div>
-                        <div className="flex-1 bg-white dark:bg-slate-700 rounded px-3 py-1 text-xs text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-600">
-                          https://app.powerbi.com/groups/workspace/reports/analytics-dashboard
+                        <div className="flex-1 bg-white dark:bg-slate-700 rounded px-2 py-0.5 text-xs text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-600 truncate">
+                          app.powerbi.com/analytics-dashboard
                         </div>
                       </div>
                     </div>
 
                     {/* Dashboard Content */}
-                    <div className="relative flex-1 overflow-hidden">
+                    <div className="relative h-[calc(100%-5rem)] overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Ff9405dcdc5a745958012fe062754e319?format=webp&width=800"
                         alt="Power BI Dashboard - Visit Trend Analysis with Interactive Charts"
@@ -478,15 +469,15 @@ export default function Index() {
                     </div>
 
                     {/* Live Dashboard Indicator */}
-                    <div className="absolute top-20 right-4 bg-green-500 text-white text-xs px-2 py-1 rounded-full flex items-center gap-1 shadow-lg">
-                      <div className="w-2 h-2 rounded-full bg-white animate-pulse"></div>
+                    <div className="absolute top-16 right-3 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1 shadow-lg">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></div>
                       Live
                     </div>
                   </div>
                 </div>
 
                 {/* Project Details */}
-                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="lg:col-span-2 p-6 lg:p-8 flex flex-col justify-center">
                   <div className="mb-6">
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
