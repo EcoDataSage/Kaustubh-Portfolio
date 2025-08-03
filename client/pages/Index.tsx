@@ -21,6 +21,7 @@ import {
   Users,
   Zap,
   ExternalLink,
+  Github,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
