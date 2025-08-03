@@ -420,269 +420,397 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="space-y-12 max-w-6xl mx-auto">
             {/* Project 1: Visit Analytics Dashboard */}
-            <Card className="border-0 shadow-xl bg-card/60 backdrop-blur-sm overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              {/* Mac Window Frame */}
-              <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
-                {/* Window Title Bar */}
-                <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-3 py-2 border-b border-slate-300 dark:border-slate-600">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5">
-                      <div className="w-2 h-2 rounded-full bg-red-500"></div>
-                      <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-                      <div className="w-2 h-2 rounded-full bg-green-500"></div>
+            <Card className="border-0 shadow-xl bg-card/60 backdrop-blur-sm overflow-hidden">
+              <div className="grid lg:grid-cols-5 gap-0">
+                {/* Project Image */}
+                <div className="relative group lg:col-span-3">
+                  {/* Mac Window Frame */}
+                  <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-lg shadow-2xl">
+                    {/* Window Title Bar */}
+                    <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-3 py-2 border-b border-slate-300 dark:border-slate-600">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-red-500 hover:bg-red-600 transition-colors cursor-pointer"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500 hover:bg-yellow-600 transition-colors cursor-pointer"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-green-500 hover:bg-green-600 transition-colors cursor-pointer"></div>
+                        </div>
+                        <div className="text-xs font-medium text-slate-600 dark:text-slate-300 absolute left-1/2 transform -translate-x-1/2">
+                          Power BI Service - Visit Analytics
+                        </div>
+                        <div className="w-12"></div>
+                      </div>
                     </div>
-                    <div className="text-xs font-medium text-slate-600 dark:text-slate-300">
-                      Power BI Service
+
+                    {/* Browser Navigation Bar */}
+                    <div className="bg-slate-50 dark:bg-slate-800 px-3 py-1.5 border-b border-slate-200 dark:border-slate-700">
+                      <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-1">
+                          <div className="w-5 h-5 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
+                            <svg className="w-2.5 h-2.5 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="flex-1 bg-white dark:bg-slate-700 rounded px-2 py-0.5 text-xs text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-600 truncate">
+                          app.powerbi.com/visit-analytics
+                        </div>
+                      </div>
                     </div>
-                    <div className="w-12"></div>
+
+                    {/* Dashboard Content */}
+                    <div className="relative h-[calc(100%-5rem)] overflow-hidden">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Ff9405dcdc5a745958012fe062754e319?format=webp&width=800"
+                        alt="Visit Analytics Dashboard - Trend Analysis"
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+
+                    {/* Live Dashboard Indicator */}
+                    <div className="absolute top-16 right-3 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1 shadow-lg">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></div>
+                      Live
+                    </div>
                   </div>
                 </div>
-                {/* Dashboard Content */}
-                <div className="relative h-[calc(100%-2.5rem)] overflow-hidden">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Ff9405dcdc5a745958012fe062754e319?format=webp&width=800"
-                    alt="Visit Analytics Dashboard"
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1">
-                    <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></div>
-                    Live
+
+                {/* Project Details */}
+                <div className="lg:col-span-2 p-6 lg:p-8 flex flex-col justify-center">
+                  <div className="mb-4">
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+                      <Badge variant="secondary" className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30">
+                        Visit Analytics
+                      </Badge>
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-foreground">
+                      Visit Trend Dashboard
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
+                      Comprehensive BI solution for analyzing website visit patterns with real-time data visualization, interactive filtering, and advanced trend analysis.
+                    </p>
+                  </div>
+
+                  {/* Key Features */}
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-foreground mb-2 uppercase tracking-wide">
+                      Key Features
+                    </h4>
+                    <div className="grid grid-cols-1 gap-2">
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Weekly & Daily Trend Analysis</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Interactive Visualizations</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Real-time Data Integration</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-foreground mb-2 uppercase tracking-wide">
+                      Technologies
+                    </h4>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">Power BI</Badge>
+                      <Badge variant="outline" className="text-xs bg-green-500/10 border-green-500/30 text-green-400">DAX</Badge>
+                      <Badge variant="outline" className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400">SQL Server</Badge>
+                    </div>
+                  </div>
+
+                  {/* GitHub Repository Button */}
+                  <div className="mt-4 pt-4 border-t border-border/50">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => window.open("https://github.com/kRamekar/Hourly_Occupancy", "_blank")}
+                      className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 w-full"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      View Source Code
+                    </Button>
+                    <p className="text-xs text-muted-foreground mt-2 text-center">
+                      Clone and run locally to explore the full dashboard
+                    </p>
                   </div>
                 </div>
-              </div>
-              {/* Project Details */}
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
-                  <Badge
-                    variant="secondary"
-                    className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30"
-                  >
-                    Visit Analytics
-                  </Badge>
-                </div>
-                <h3 className="text-lg font-bold mb-2">
-                  Visit Trend Dashboard
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Comprehensive BI solution for analyzing website visit patterns
-                  with real-time data visualization and trend analysis.
-                </p>
-                <div className="flex flex-wrap gap-1 mb-4">
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
-                  >
-                    Power BI
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-green-500/10 border-green-500/30 text-green-400"
-                  >
-                    DAX
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400"
-                  >
-                    SQL
-                  </Badge>
-                </div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/kRamekar/Hourly_Occupancy",
-                      "_blank",
-                    )
-                  }
-                  className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 w-full"
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  View Code
-                </Button>
               </div>
             </Card>
 
             {/* Project 2: Master Sales Dashboard */}
-            <Card className="border-0 shadow-xl bg-card/60 backdrop-blur-sm overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              {/* Mac Window Frame */}
-              <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
-                {/* Window Title Bar */}
-                <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-3 py-2 border-b border-slate-300 dark:border-slate-600">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5">
-                      <div className="w-2 h-2 rounded-full bg-red-500"></div>
-                      <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-                      <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                    </div>
-                    <div className="text-xs font-medium text-slate-600 dark:text-slate-300">
-                      Master Sales BI
-                    </div>
-                    <div className="w-12"></div>
-                  </div>
-                </div>
-                {/* Dashboard Content */}
-                <div className="relative h-[calc(100%-2.5rem)] overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-emerald-950 dark:to-emerald-900 flex items-center justify-center">
-                    <div className="text-center p-6">
-                      <div className="w-16 h-16 mx-auto mb-4 bg-emerald-500/20 rounded-full flex items-center justify-center">
-                        <BarChart3 className="w-8 h-8 text-emerald-600" />
+            <Card className="border-0 shadow-xl bg-card/60 backdrop-blur-sm overflow-hidden">
+              <div className="grid lg:grid-cols-5 gap-0">
+                {/* Project Image */}
+                <div className="relative group lg:col-span-3">
+                  {/* Mac Window Frame */}
+                  <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-lg shadow-2xl">
+                    {/* Window Title Bar */}
+                    <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-3 py-2 border-b border-slate-300 dark:border-slate-600">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-red-500 hover:bg-red-600 transition-colors cursor-pointer"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500 hover:bg-yellow-600 transition-colors cursor-pointer"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-green-500 hover:bg-green-600 transition-colors cursor-pointer"></div>
+                        </div>
+                        <div className="text-xs font-medium text-slate-600 dark:text-slate-300 absolute left-1/2 transform -translate-x-1/2">
+                          Master Sales Dashboard
+                        </div>
+                        <div className="w-12"></div>
                       </div>
-                      <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-300 mb-2">
-                        Sales Analytics
-                      </h4>
-                      <p className="text-sm text-emerald-600 dark:text-emerald-400">
-                        Revenue • Trends • Performance
-                      </p>
+                    </div>
+
+                    {/* Browser Navigation Bar */}
+                    <div className="bg-slate-50 dark:bg-slate-800 px-3 py-1.5 border-b border-slate-200 dark:border-slate-700">
+                      <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-1">
+                          <div className="w-5 h-5 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
+                            <svg className="w-2.5 h-2.5 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="flex-1 bg-white dark:bg-slate-700 rounded px-2 py-0.5 text-xs text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-600 truncate">
+                          app.powerbi.com/master-sales
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Dashboard Content */}
+                    <div className="relative h-[calc(100%-5rem)] overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-emerald-950 dark:to-emerald-900 flex items-center justify-center">
+                        <div className="text-center p-8">
+                          <div className="w-20 h-20 mx-auto mb-6 bg-emerald-500/20 rounded-full flex items-center justify-center">
+                            <BarChart3 className="w-10 h-10 text-emerald-600 dark:text-emerald-400" />
+                          </div>
+                          <h4 className="text-xl font-semibold text-emerald-700 dark:text-emerald-300 mb-3">Master Sales Analytics</h4>
+                          <p className="text-sm text-emerald-600 dark:text-emerald-400 mb-4">Revenue • Trends • Performance • Profit Margins</p>
+                          <div className="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">$2.4M</div>
+                              <div className="text-xs text-emerald-600 dark:text-emerald-400">Total Revenue</div>
+                            </div>
+                            <div>
+                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">1,274</div>
+                              <div className="text-xs text-emerald-600 dark:text-emerald-400">Units Sold</div>
+                            </div>
+                            <div>
+                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">15%</div>
+                              <div className="text-xs text-emerald-600 dark:text-emerald-400">Growth</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+
+                    {/* Live Dashboard Indicator */}
+                    <div className="absolute top-16 right-3 bg-emerald-500 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1 shadow-lg">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></div>
+                      Live
                     </div>
                   </div>
-                  <div className="absolute top-2 right-2 bg-emerald-500 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1">
-                    <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></div>
-                    Live
+                </div>
+
+                {/* Project Details */}
+                <div className="lg:col-span-2 p-6 lg:p-8 flex flex-col justify-center">
+                  <div className="mb-4">
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="w-2 h-2 rounded-full bg-emerald-400"></div>
+                      <Badge variant="secondary" className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
+                        Sales Analytics
+                      </Badge>
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-foreground">
+                      Master Sales Dashboard
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
+                      Interactive dashboard analyzing sales performance across multiple dimensions including total revenue, units sold, sales trends, and regional customer segmentation.
+                    </p>
+                  </div>
+
+                  {/* Key Features */}
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-foreground mb-2 uppercase tracking-wide">
+                      Key Features
+                    </h4>
+                    <div className="grid grid-cols-1 gap-2">
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-emerald-400"></div>
+                        <span className="text-muted-foreground">Revenue & Profit Analysis</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-emerald-400"></div>
+                        <span className="text-muted-foreground">Product Performance Tracking</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-emerald-400"></div>
+                        <span className="text-muted-foreground">Regional Segmentation</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-foreground mb-2 uppercase tracking-wide">
+                      Technologies
+                    </h4>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge variant="outline" className="text-xs bg-emerald-500/10 border-emerald-500/30 text-emerald-400">Power BI</Badge>
+                      <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">DAX</Badge>
+                      <Badge variant="outline" className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400">Excel</Badge>
+                    </div>
+                  </div>
+
+                  {/* GitHub Repository Button */}
+                  <div className="mt-4 pt-4 border-t border-border/50">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => window.open("https://github.com/kRamekar/MasterSales", "_blank")}
+                      className="border-emerald-400/50 text-emerald-400 hover:bg-emerald-400/10 w-full"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      View Source Code
+                    </Button>
+                    <p className="text-xs text-muted-foreground mt-2 text-center">
+                      Download and customize with your sales data
+                    </p>
                   </div>
                 </div>
-              </div>
-              {/* Project Details */}
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-2 h-2 rounded-full bg-emerald-400"></div>
-                  <Badge
-                    variant="secondary"
-                    className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
-                  >
-                    Sales Analytics
-                  </Badge>
-                </div>
-                <h3 className="text-lg font-bold mb-2">
-                  Master Sales Dashboard
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Interactive dashboard analyzing sales performance across
-                  dimensions including revenue, trends, and regional
-                  segmentation.
-                </p>
-                <div className="flex flex-wrap gap-1 mb-4">
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-emerald-500/10 border-emerald-500/30 text-emerald-400"
-                  >
-                    Power BI
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
-                  >
-                    DAX
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400"
-                  >
-                    Excel
-                  </Badge>
-                </div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/kRamekar/MasterSales",
-                      "_blank",
-                    )
-                  }
-                  className="border-emerald-400/50 text-emerald-400 hover:bg-emerald-400/10 w-full"
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  View Code
-                </Button>
               </div>
             </Card>
 
             {/* Project 3: Growth Dashboard */}
-            <Card className="border-0 shadow-xl bg-card/60 backdrop-blur-sm overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              {/* Mac Window Frame */}
-              <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
-                {/* Window Title Bar */}
-                <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-3 py-2 border-b border-slate-300 dark:border-slate-600">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5">
-                      <div className="w-2 h-2 rounded-full bg-red-500"></div>
-                      <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-                      <div className="w-2 h-2 rounded-full bg-green-500"></div>
+            <Card className="border-0 shadow-xl bg-card/60 backdrop-blur-sm overflow-hidden">
+              <div className="grid lg:grid-cols-5 gap-0">
+                {/* Project Image */}
+                <div className="relative group lg:col-span-3">
+                  {/* Mac Window Frame */}
+                  <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-lg shadow-2xl">
+                    {/* Window Title Bar */}
+                    <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-3 py-2 border-b border-slate-300 dark:border-slate-600">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-red-500 hover:bg-red-600 transition-colors cursor-pointer"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500 hover:bg-yellow-600 transition-colors cursor-pointer"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-green-500 hover:bg-green-600 transition-colors cursor-pointer"></div>
+                        </div>
+                        <div className="text-xs font-medium text-slate-600 dark:text-slate-300 absolute left-1/2 transform -translate-x-1/2">
+                          Growth Analytics Dashboard
+                        </div>
+                        <div className="w-12"></div>
+                      </div>
                     </div>
-                    <div className="text-xs font-medium text-slate-600 dark:text-slate-300">
+
+                    {/* Browser Navigation Bar */}
+                    <div className="bg-slate-50 dark:bg-slate-800 px-3 py-1.5 border-b border-slate-200 dark:border-slate-700">
+                      <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-1">
+                          <div className="w-5 h-5 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
+                            <svg className="w-2.5 h-2.5 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="flex-1 bg-white dark:bg-slate-700 rounded px-2 py-0.5 text-xs text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-600 truncate">
+                          app.powerbi.com/growth-dashboard
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Dashboard Content */}
+                    <div className="relative h-[calc(100%-5rem)] overflow-hidden">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Fc0b91a8bef994fd091e3b03e297ef5c9?format=webp&width=800"
+                        alt="Growth Dashboard with KPIs and Analytics"
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+
+                    {/* Live Dashboard Indicator */}
+                    <div className="absolute top-16 right-3 bg-violet-500 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1 shadow-lg">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></div>
+                      Live
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project Details */}
+                <div className="lg:col-span-2 p-6 lg:p-8 flex flex-col justify-center">
+                  <div className="mb-4">
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="w-2 h-2 rounded-full bg-violet-400"></div>
+                      <Badge variant="secondary" className="bg-violet-500/20 text-violet-400 border-violet-500/30">
+                        Growth Analytics
+                      </Badge>
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-foreground">
                       Growth Dashboard
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
+                      Comprehensive growth tracking dashboard monitoring KPIs, customer acquisition, business expansion metrics, and period-over-period performance comparisons.
+                    </p>
+                  </div>
+
+                  {/* Key Features */}
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-foreground mb-2 uppercase tracking-wide">
+                      Key Features
+                    </h4>
+                    <div className="grid grid-cols-1 gap-2">
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-violet-400"></div>
+                        <span className="text-muted-foreground">Customer Acquisition Tracking</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-violet-400"></div>
+                        <span className="text-muted-foreground">Revenue Growth Analysis</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-1 h-1 rounded-full bg-violet-400"></div>
+                        <span className="text-muted-foreground">Target vs Actual Performance</span>
+                      </div>
                     </div>
-                    <div className="w-12"></div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-foreground mb-2 uppercase tracking-wide">
+                      Technologies
+                    </h4>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge variant="outline" className="text-xs bg-violet-500/10 border-violet-500/30 text-violet-400">Power BI</Badge>
+                      <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">DAX</Badge>
+                      <Badge variant="outline" className="text-xs bg-orange-500/10 border-orange-500/30 text-orange-400">SQL</Badge>
+                    </div>
+                  </div>
+
+                  {/* GitHub Repository Button */}
+                  <div className="mt-4 pt-4 border-t border-border/50">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => window.open("https://github.com/kRamekar/GrowthDashboard", "_blank")}
+                      className="border-violet-400/50 text-violet-400 hover:bg-violet-400/10 w-full"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      View Source Code
+                    </Button>
+                    <p className="text-xs text-muted-foreground mt-2 text-center">
+                      Customize for your growth metrics and KPIs
+                    </p>
                   </div>
                 </div>
-                {/* Dashboard Content */}
-                <div className="relative h-[calc(100%-2.5rem)] overflow-hidden">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Fc0b91a8bef994fd091e3b03e297ef5c9?format=webp&width=800"
-                    alt="Growth Dashboard with KPIs and Analytics"
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-2 right-2 bg-violet-500 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1">
-                    <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></div>
-                    Live
-                  </div>
-                </div>
-              </div>
-              {/* Project Details */}
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-2 h-2 rounded-full bg-violet-400"></div>
-                  <Badge
-                    variant="secondary"
-                    className="bg-violet-500/20 text-violet-400 border-violet-500/30"
-                  >
-                    Growth Analytics
-                  </Badge>
-                </div>
-                <h3 className="text-lg font-bold mb-2">Growth Dashboard</h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Comprehensive growth tracking dashboard monitoring KPIs,
-                  customer acquisition, and business expansion metrics.
-                </p>
-                <div className="flex flex-wrap gap-1 mb-4">
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-violet-500/10 border-violet-500/30 text-violet-400"
-                  >
-                    Power BI
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
-                  >
-                    DAX
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="text-xs bg-orange-500/10 border-orange-500/30 text-orange-400"
-                  >
-                    SQL
-                  </Badge>
-                </div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/kRamekar/GrowthDashboard",
-                      "_blank",
-                    )
-                  }
-                  className="border-violet-400/50 text-violet-400 hover:bg-violet-400/10 w-full"
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  View Code
-                </Button>
               </div>
             </Card>
           </div>
