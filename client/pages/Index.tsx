@@ -448,8 +448,16 @@ export default function Index() {
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1">
                           <div className="w-5 h-5 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
-                            <svg className="w-2.5 h-2.5 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                            <svg
+                              className="w-2.5 h-2.5 text-slate-500"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clipRule="evenodd"
+                              />
                             </svg>
                           </div>
                         </div>
@@ -482,7 +490,10 @@ export default function Index() {
                   <div className="mb-4">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
-                      <Badge variant="secondary" className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30">
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30"
+                      >
                         Visit Analytics
                       </Badge>
                     </div>
@@ -490,7 +501,9 @@ export default function Index() {
                       Visit Trend Dashboard
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                      Comprehensive BI solution for analyzing website visit patterns with real-time data visualization, interactive filtering, and advanced trend analysis.
+                      Comprehensive BI solution for analyzing website visit
+                      patterns with real-time data visualization, interactive
+                      filtering, and advanced trend analysis.
                     </p>
                   </div>
 
@@ -502,15 +515,21 @@ export default function Index() {
                     <div className="grid grid-cols-1 gap-2">
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">Weekly & Daily Trend Analysis</span>
+                        <span className="text-muted-foreground">
+                          Weekly & Daily Trend Analysis
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">Interactive Visualizations</span>
+                        <span className="text-muted-foreground">
+                          Interactive Visualizations
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">Real-time Data Integration</span>
+                        <span className="text-muted-foreground">
+                          Real-time Data Integration
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -521,9 +540,24 @@ export default function Index() {
                       Technologies
                     </h4>
                     <div className="flex flex-wrap gap-1">
-                      <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">Power BI</Badge>
-                      <Badge variant="outline" className="text-xs bg-green-500/10 border-green-500/30 text-green-400">DAX</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400">SQL Server</Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
+                      >
+                        Power BI
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-green-500/10 border-green-500/30 text-green-400"
+                      >
+                        DAX
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400"
+                      >
+                        SQL Server
+                      </Badge>
                     </div>
                   </div>
 
@@ -532,7 +566,12 @@ export default function Index() {
                     <Button
                       variant="outline"
                       size="sm"
-                      onClick={() => window.open("https://github.com/kRamekar/Hourly_Occupancy", "_blank")}
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/kRamekar/Hourly_Occupancy",
+                          "_blank",
+                        )
+                      }
                       className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 w-full"
                     >
                       <Github className="mr-2 h-4 w-4" />
@@ -573,8 +612,16 @@ export default function Index() {
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1">
                           <div className="w-5 h-5 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
-                            <svg className="w-2.5 h-2.5 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                            <svg
+                              className="w-2.5 h-2.5 text-slate-500"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clipRule="evenodd"
+                              />
                             </svg>
                           </div>
                         </div>
@@ -591,20 +638,36 @@ export default function Index() {
                           <div className="w-20 h-20 mx-auto mb-6 bg-emerald-500/20 rounded-full flex items-center justify-center">
                             <BarChart3 className="w-10 h-10 text-emerald-600 dark:text-emerald-400" />
                           </div>
-                          <h4 className="text-xl font-semibold text-emerald-700 dark:text-emerald-300 mb-3">Master Sales Analytics</h4>
-                          <p className="text-sm text-emerald-600 dark:text-emerald-400 mb-4">Revenue • Trends • Performance • Profit Margins</p>
+                          <h4 className="text-xl font-semibold text-emerald-700 dark:text-emerald-300 mb-3">
+                            Master Sales Analytics
+                          </h4>
+                          <p className="text-sm text-emerald-600 dark:text-emerald-400 mb-4">
+                            Revenue • Trends • Performance • Profit Margins
+                          </p>
                           <div className="grid grid-cols-3 gap-4 text-center">
                             <div>
-                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">$2.4M</div>
-                              <div className="text-xs text-emerald-600 dark:text-emerald-400">Total Revenue</div>
+                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">
+                                $2.4M
+                              </div>
+                              <div className="text-xs text-emerald-600 dark:text-emerald-400">
+                                Total Revenue
+                              </div>
                             </div>
                             <div>
-                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">1,274</div>
-                              <div className="text-xs text-emerald-600 dark:text-emerald-400">Units Sold</div>
+                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">
+                                1,274
+                              </div>
+                              <div className="text-xs text-emerald-600 dark:text-emerald-400">
+                                Units Sold
+                              </div>
                             </div>
                             <div>
-                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">15%</div>
-                              <div className="text-xs text-emerald-600 dark:text-emerald-400">Growth</div>
+                              <div className="text-lg font-bold text-emerald-700 dark:text-emerald-300">
+                                15%
+                              </div>
+                              <div className="text-xs text-emerald-600 dark:text-emerald-400">
+                                Growth
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -625,7 +688,10 @@ export default function Index() {
                   <div className="mb-4">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="w-2 h-2 rounded-full bg-emerald-400"></div>
-                      <Badge variant="secondary" className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
+                      <Badge
+                        variant="secondary"
+                        className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
+                      >
                         Sales Analytics
                       </Badge>
                     </div>
@@ -633,7 +699,9 @@ export default function Index() {
                       Master Sales Dashboard
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                      Interactive dashboard analyzing sales performance across multiple dimensions including total revenue, units sold, sales trends, and regional customer segmentation.
+                      Interactive dashboard analyzing sales performance across
+                      multiple dimensions including total revenue, units sold,
+                      sales trends, and regional customer segmentation.
                     </p>
                   </div>
 
@@ -645,15 +713,21 @@ export default function Index() {
                     <div className="grid grid-cols-1 gap-2">
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-emerald-400"></div>
-                        <span className="text-muted-foreground">Revenue & Profit Analysis</span>
+                        <span className="text-muted-foreground">
+                          Revenue & Profit Analysis
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-emerald-400"></div>
-                        <span className="text-muted-foreground">Product Performance Tracking</span>
+                        <span className="text-muted-foreground">
+                          Product Performance Tracking
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-emerald-400"></div>
-                        <span className="text-muted-foreground">Regional Segmentation</span>
+                        <span className="text-muted-foreground">
+                          Regional Segmentation
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -664,9 +738,24 @@ export default function Index() {
                       Technologies
                     </h4>
                     <div className="flex flex-wrap gap-1">
-                      <Badge variant="outline" className="text-xs bg-emerald-500/10 border-emerald-500/30 text-emerald-400">Power BI</Badge>
-                      <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">DAX</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400">Excel</Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-emerald-500/10 border-emerald-500/30 text-emerald-400"
+                      >
+                        Power BI
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
+                      >
+                        DAX
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400"
+                      >
+                        Excel
+                      </Badge>
                     </div>
                   </div>
 
@@ -675,7 +764,12 @@ export default function Index() {
                     <Button
                       variant="outline"
                       size="sm"
-                      onClick={() => window.open("https://github.com/kRamekar/MasterSales", "_blank")}
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/kRamekar/MasterSales",
+                          "_blank",
+                        )
+                      }
                       className="border-emerald-400/50 text-emerald-400 hover:bg-emerald-400/10 w-full"
                     >
                       <Github className="mr-2 h-4 w-4" />
@@ -716,8 +810,16 @@ export default function Index() {
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1">
                           <div className="w-5 h-5 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
-                            <svg className="w-2.5 h-2.5 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                            <svg
+                              className="w-2.5 h-2.5 text-slate-500"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clipRule="evenodd"
+                              />
                             </svg>
                           </div>
                         </div>
@@ -750,7 +852,10 @@ export default function Index() {
                   <div className="mb-4">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="w-2 h-2 rounded-full bg-violet-400"></div>
-                      <Badge variant="secondary" className="bg-violet-500/20 text-violet-400 border-violet-500/30">
+                      <Badge
+                        variant="secondary"
+                        className="bg-violet-500/20 text-violet-400 border-violet-500/30"
+                      >
                         Growth Analytics
                       </Badge>
                     </div>
@@ -758,7 +863,9 @@ export default function Index() {
                       Growth Dashboard
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                      Comprehensive growth tracking dashboard monitoring KPIs, customer acquisition, business expansion metrics, and period-over-period performance comparisons.
+                      Comprehensive growth tracking dashboard monitoring KPIs,
+                      customer acquisition, business expansion metrics, and
+                      period-over-period performance comparisons.
                     </p>
                   </div>
 
@@ -770,15 +877,21 @@ export default function Index() {
                     <div className="grid grid-cols-1 gap-2">
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-violet-400"></div>
-                        <span className="text-muted-foreground">Customer Acquisition Tracking</span>
+                        <span className="text-muted-foreground">
+                          Customer Acquisition Tracking
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-violet-400"></div>
-                        <span className="text-muted-foreground">Revenue Growth Analysis</span>
+                        <span className="text-muted-foreground">
+                          Revenue Growth Analysis
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-violet-400"></div>
-                        <span className="text-muted-foreground">Target vs Actual Performance</span>
+                        <span className="text-muted-foreground">
+                          Target vs Actual Performance
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -789,9 +902,24 @@ export default function Index() {
                       Technologies
                     </h4>
                     <div className="flex flex-wrap gap-1">
-                      <Badge variant="outline" className="text-xs bg-violet-500/10 border-violet-500/30 text-violet-400">Power BI</Badge>
-                      <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">DAX</Badge>
-                      <Badge variant="outline" className="text-xs bg-orange-500/10 border-orange-500/30 text-orange-400">SQL</Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-violet-500/10 border-violet-500/30 text-violet-400"
+                      >
+                        Power BI
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
+                      >
+                        DAX
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-orange-500/10 border-orange-500/30 text-orange-400"
+                      >
+                        SQL
+                      </Badge>
                     </div>
                   </div>
 
@@ -800,7 +928,12 @@ export default function Index() {
                     <Button
                       variant="outline"
                       size="sm"
-                      onClick={() => window.open("https://github.com/kRamekar/GrowthDashboard", "_blank")}
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/kRamekar/GrowthDashboard",
+                          "_blank",
+                        )
+                      }
                       className="border-violet-400/50 text-violet-400 hover:bg-violet-400/10 w-full"
                     >
                       <Github className="mr-2 h-4 w-4" />
