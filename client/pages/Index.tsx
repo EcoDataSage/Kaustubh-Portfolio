@@ -161,6 +161,12 @@ export default function Index() {
                 Experience
               </a>
               <a
+                href="#projects"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Projects
+              </a>
+              <a
                 href="#voluntary"
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
