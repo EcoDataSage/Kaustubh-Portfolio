@@ -424,20 +424,53 @@ export default function Index() {
               <div className="grid lg:grid-cols-2 gap-0">
                 {/* Project Image */}
                 <div className="relative group">
-                  <div className="aspect-video lg:aspect-square relative overflow-hidden bg-gradient-to-br from-cyan-500/10 to-blue-500/10">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Ff9405dcdc5a745958012fe062754e319?format=webp&width=800"
-                      alt="Power BI Dashboard - Visit Trend Analysis with Interactive Charts"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  {/* Interactive overlay */}
-                  <div className="absolute top-4 right-4">
-                    <div className="flex gap-2">
-                      <div className="w-3 h-3 rounded-full bg-red-400 animate-pulse"></div>
-                      <div className="w-3 h-3 rounded-full bg-yellow-400 animate-pulse animation-delay-300"></div>
-                      <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse animation-delay-500"></div>
+                  {/* Mac Window Frame */}
+                  <div className="aspect-video lg:aspect-square relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-lg shadow-2xl">
+                    {/* Window Title Bar */}
+                    <div className="bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 px-4 py-3 border-b border-slate-300 dark:border-slate-600">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <div className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-600 transition-colors cursor-pointer"></div>
+                          <div className="w-3 h-3 rounded-full bg-yellow-500 hover:bg-yellow-600 transition-colors cursor-pointer"></div>
+                          <div className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600 transition-colors cursor-pointer"></div>
+                        </div>
+                        <div className="text-sm font-medium text-slate-600 dark:text-slate-300 absolute left-1/2 transform -translate-x-1/2">
+                          Power BI Service - Visit Analytics Dashboard
+                        </div>
+                        <div className="w-16"></div> {/* Spacer for centering */}
+                      </div>
+                    </div>
+
+                    {/* Browser/App Navigation Bar */}
+                    <div className="bg-slate-50 dark:bg-slate-800 px-4 py-2 border-b border-slate-200 dark:border-slate-700">
+                      <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-1">
+                          <div className="w-6 h-6 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
+                            <svg className="w-3 h-3 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="flex-1 bg-white dark:bg-slate-700 rounded px-3 py-1 text-xs text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-600">
+                          https://app.powerbi.com/groups/workspace/reports/analytics-dashboard
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Dashboard Content */}
+                    <div className="relative flex-1 overflow-hidden">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Ff9405dcdc5a745958012fe062754e319?format=webp&width=800"
+                        alt="Power BI Dashboard - Visit Trend Analysis with Interactive Charts"
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+
+                    {/* Live Dashboard Indicator */}
+                    <div className="absolute top-20 right-4 bg-green-500 text-white text-xs px-2 py-1 rounded-full flex items-center gap-1 shadow-lg">
+                      <div className="w-2 h-2 rounded-full bg-white animate-pulse"></div>
+                      Live
                     </div>
                   </div>
                 </div>
