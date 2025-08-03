@@ -456,23 +456,49 @@ export default function Index() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
-                  <Badge variant="secondary" className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30">
+                  <Badge
+                    variant="secondary"
+                    className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30"
+                  >
                     Visit Analytics
                   </Badge>
                 </div>
-                <h3 className="text-lg font-bold mb-2">Visit Trend Dashboard</h3>
+                <h3 className="text-lg font-bold mb-2">
+                  Visit Trend Dashboard
+                </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Comprehensive BI solution for analyzing website visit patterns with real-time data visualization and trend analysis.
+                  Comprehensive BI solution for analyzing website visit patterns
+                  with real-time data visualization and trend analysis.
                 </p>
                 <div className="flex flex-wrap gap-1 mb-4">
-                  <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">Power BI</Badge>
-                  <Badge variant="outline" className="text-xs bg-green-500/10 border-green-500/30 text-green-400">DAX</Badge>
-                  <Badge variant="outline" className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400">SQL</Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
+                  >
+                    Power BI
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-green-500/10 border-green-500/30 text-green-400"
+                  >
+                    DAX
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400"
+                  >
+                    SQL
+                  </Badge>
                 </div>
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => window.open("https://github.com/kRamekar/Hourly_Occupancy", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/kRamekar/Hourly_Occupancy",
+                      "_blank",
+                    )
+                  }
                   className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 w-full"
                 >
                   <Github className="mr-2 h-4 w-4" />
@@ -506,8 +532,12 @@ export default function Index() {
                       <div className="w-16 h-16 mx-auto mb-4 bg-emerald-500/20 rounded-full flex items-center justify-center">
                         <BarChart3 className="w-8 h-8 text-emerald-600" />
                       </div>
-                      <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-300 mb-2">Sales Analytics</h4>
-                      <p className="text-sm text-emerald-600 dark:text-emerald-400">Revenue • Trends • Performance</p>
+                      <h4 className="text-lg font-semibold text-emerald-700 dark:text-emerald-300 mb-2">
+                        Sales Analytics
+                      </h4>
+                      <p className="text-sm text-emerald-600 dark:text-emerald-400">
+                        Revenue • Trends • Performance
+                      </p>
                     </div>
                   </div>
                   <div className="absolute top-2 right-2 bg-emerald-500 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1">
@@ -520,23 +550,50 @@ export default function Index() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-2 h-2 rounded-full bg-emerald-400"></div>
-                  <Badge variant="secondary" className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
+                  <Badge
+                    variant="secondary"
+                    className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
+                  >
                     Sales Analytics
                   </Badge>
                 </div>
-                <h3 className="text-lg font-bold mb-2">Master Sales Dashboard</h3>
+                <h3 className="text-lg font-bold mb-2">
+                  Master Sales Dashboard
+                </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Interactive dashboard analyzing sales performance across dimensions including revenue, trends, and regional segmentation.
+                  Interactive dashboard analyzing sales performance across
+                  dimensions including revenue, trends, and regional
+                  segmentation.
                 </p>
                 <div className="flex flex-wrap gap-1 mb-4">
-                  <Badge variant="outline" className="text-xs bg-emerald-500/10 border-emerald-500/30 text-emerald-400">Power BI</Badge>
-                  <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">DAX</Badge>
-                  <Badge variant="outline" className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400">Excel</Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-emerald-500/10 border-emerald-500/30 text-emerald-400"
+                  >
+                    Power BI
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
+                  >
+                    DAX
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400"
+                  >
+                    Excel
+                  </Badge>
                 </div>
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => window.open("https://github.com/kRamekar/MasterSales", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/kRamekar/MasterSales",
+                      "_blank",
+                    )
+                  }
                   className="border-emerald-400/50 text-emerald-400 hover:bg-emerald-400/10 w-full"
                 >
                   <Github className="mr-2 h-4 w-4" />
@@ -580,23 +637,47 @@ export default function Index() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-2 h-2 rounded-full bg-violet-400"></div>
-                  <Badge variant="secondary" className="bg-violet-500/20 text-violet-400 border-violet-500/30">
+                  <Badge
+                    variant="secondary"
+                    className="bg-violet-500/20 text-violet-400 border-violet-500/30"
+                  >
                     Growth Analytics
                   </Badge>
                 </div>
                 <h3 className="text-lg font-bold mb-2">Growth Dashboard</h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Comprehensive growth tracking dashboard monitoring KPIs, customer acquisition, and business expansion metrics.
+                  Comprehensive growth tracking dashboard monitoring KPIs,
+                  customer acquisition, and business expansion metrics.
                 </p>
                 <div className="flex flex-wrap gap-1 mb-4">
-                  <Badge variant="outline" className="text-xs bg-violet-500/10 border-violet-500/30 text-violet-400">Power BI</Badge>
-                  <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">DAX</Badge>
-                  <Badge variant="outline" className="text-xs bg-orange-500/10 border-orange-500/30 text-orange-400">SQL</Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-violet-500/10 border-violet-500/30 text-violet-400"
+                  >
+                    Power BI
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
+                  >
+                    DAX
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="text-xs bg-orange-500/10 border-orange-500/30 text-orange-400"
+                  >
+                    SQL
+                  </Badge>
                 </div>
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => window.open("https://github.com/kRamekar/GrowthDashboard", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/kRamekar/GrowthDashboard",
+                      "_blank",
+                    )
+                  }
                   className="border-violet-400/50 text-violet-400 hover:bg-violet-400/10 w-full"
                 >
                   <Github className="mr-2 h-4 w-4" />
