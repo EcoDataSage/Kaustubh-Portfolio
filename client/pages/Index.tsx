@@ -447,8 +447,16 @@ export default function Index() {
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1">
                           <div className="w-5 h-5 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
-                            <svg className="w-2.5 h-2.5 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                            <svg
+                              className="w-2.5 h-2.5 text-slate-500"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clipRule="evenodd"
+                              />
                             </svg>
                           </div>
                         </div>
@@ -481,7 +489,10 @@ export default function Index() {
                   <div className="mb-4">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
-                      <Badge variant="secondary" className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30">
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30"
+                      >
                         Power BI Dashboard
                       </Badge>
                     </div>
@@ -489,7 +500,9 @@ export default function Index() {
                       Advanced BI Dashboard
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                      A comprehensive BI solution featuring real-time data visualization, interactive filtering, and advanced analytics for executive decision-making.
+                      A comprehensive BI solution featuring real-time data
+                      visualization, interactive filtering, and advanced
+                      analytics for executive decision-making.
                     </p>
                   </div>
 
@@ -501,19 +514,27 @@ export default function Index() {
                     <div className="grid grid-cols-1 gap-2">
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">Real-time Data Integration</span>
+                        <span className="text-muted-foreground">
+                          Real-time Data Integration
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">Interactive Visualizations</span>
+                        <span className="text-muted-foreground">
+                          Interactive Visualizations
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">Advanced DAX Calculations</span>
+                        <span className="text-muted-foreground">
+                          Advanced DAX Calculations
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">Performance Optimization</span>
+                        <span className="text-muted-foreground">
+                          Performance Optimization
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -524,10 +545,30 @@ export default function Index() {
                       Technologies
                     </h4>
                     <div className="flex flex-wrap gap-1">
-                      <Badge variant="outline" className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400">Power BI</Badge>
-                      <Badge variant="outline" className="text-xs bg-green-500/10 border-green-500/30 text-green-400">DAX</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400">SQL Server</Badge>
-                      <Badge variant="outline" className="text-xs bg-orange-500/10 border-orange-500/30 text-orange-400">Power Query</Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-blue-500/10 border-blue-500/30 text-blue-400"
+                      >
+                        Power BI
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-green-500/10 border-green-500/30 text-green-400"
+                      >
+                        DAX
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-purple-500/10 border-purple-500/30 text-purple-400"
+                      >
+                        SQL Server
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="text-xs bg-orange-500/10 border-orange-500/30 text-orange-400"
+                      >
+                        Power Query
+                      </Badge>
                     </div>
                   </div>
 
@@ -538,16 +579,28 @@ export default function Index() {
                     </h4>
                     <div className="grid grid-cols-3 gap-3">
                       <div className="text-center">
-                        <div className="text-lg font-bold text-cyan-400 mb-1">85%</div>
-                        <div className="text-xs text-muted-foreground">Faster Reporting</div>
+                        <div className="text-lg font-bold text-cyan-400 mb-1">
+                          85%
+                        </div>
+                        <div className="text-xs text-muted-foreground">
+                          Faster Reporting
+                        </div>
                       </div>
                       <div className="text-center">
-                        <div className="text-lg font-bold text-cyan-400 mb-1">15+</div>
-                        <div className="text-xs text-muted-foreground">Data Sources</div>
+                        <div className="text-lg font-bold text-cyan-400 mb-1">
+                          15+
+                        </div>
+                        <div className="text-xs text-muted-foreground">
+                          Data Sources
+                        </div>
                       </div>
                       <div className="text-center">
-                        <div className="text-lg font-bold text-cyan-400 mb-1">24/7</div>
-                        <div className="text-xs text-muted-foreground">Real-time</div>
+                        <div className="text-lg font-bold text-cyan-400 mb-1">
+                          24/7
+                        </div>
+                        <div className="text-xs text-muted-foreground">
+                          Real-time
+                        </div>
                       </div>
                     </div>
                   </div>
