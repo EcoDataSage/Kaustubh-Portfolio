@@ -414,8 +414,7 @@ export default function Index() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Showcasing advanced BI solutions and data visualizations that
-              transform complex datasets into actionable business insights
+              Showcasing advanced BI solutions and data visualizations that transform complex datasets into actionable business insights
             </p>
           </div>
 
@@ -427,8 +426,8 @@ export default function Index() {
                 <div className="relative group">
                   <div className="aspect-video lg:aspect-square relative overflow-hidden bg-gradient-to-br from-cyan-500/10 to-blue-500/10">
                     <img
-                      src="https://cdn.builder.io/o/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Fac4f67301faf457c9f407a8fc8173f29?alt=media&token=09fdf5d0-ae10-414b-9e8e-c03a7526ab29&apiKey=5d62d0bc8e4241838cbad68abffc672a"
-                      alt="BI Dashboard Project"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Ff9405dcdc5a745958012fe062754e319?format=webp&width=800"
+                      alt="Power BI Dashboard - Visit Trend Analysis with Interactive Charts"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -448,10 +447,7 @@ export default function Index() {
                   <div className="mb-6">
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
-                      <Badge
-                        variant="secondary"
-                        className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30"
-                      >
+                      <Badge variant="secondary" className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30">
                         Power BI Dashboard
                       </Badge>
                     </div>
@@ -459,127 +455,70 @@ export default function Index() {
                       Advanced Business Intelligence Dashboard
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      A comprehensive BI solution featuring real-time data
-                      visualization, interactive filtering, and advanced
-                      analytics. Built with Power BI, this dashboard transforms
-                      complex business data into clear, actionable insights for
+                      A comprehensive BI solution featuring real-time data visualization, interactive filtering, and advanced analytics.
+                      Built with Power BI, this dashboard transforms complex business data into clear, actionable insights for
                       executive decision-making.
                     </p>
                   </div>
 
                   {/* Key Features */}
                   <div className="mb-8">
-                    <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
-                      Key Features
-                    </h4>
+                    <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Key Features</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">
-                          Real-time Data Integration
-                        </span>
+                        <span className="text-muted-foreground">Real-time Data Integration</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">
-                          Interactive Visualizations
-                        </span>
+                        <span className="text-muted-foreground">Interactive Visualizations</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">
-                          Advanced DAX Calculations
-                        </span>
+                        <span className="text-muted-foreground">Advanced DAX Calculations</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">
-                          Performance Optimization
-                        </span>
+                        <span className="text-muted-foreground">Performance Optimization</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">
-                          Row-Level Security
-                        </span>
+                        <span className="text-muted-foreground">Row-Level Security</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
-                        <span className="text-muted-foreground">
-                          Cross-Platform Integration
-                        </span>
+                        <span className="text-muted-foreground">Cross-Platform Integration</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Technologies */}
                   <div className="mb-8">
-                    <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
-                      Technologies Used
-                    </h4>
+                    <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Technologies Used</h4>
                     <div className="flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="bg-blue-500/10 border-blue-500/30 text-blue-400"
-                      >
-                        Power BI
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="bg-green-500/10 border-green-500/30 text-green-400"
-                      >
-                        DAX
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="bg-purple-500/10 border-purple-500/30 text-purple-400"
-                      >
-                        SQL Server
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="bg-orange-500/10 border-orange-500/30 text-orange-400"
-                      >
-                        Power Query
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="bg-cyan-500/10 border-cyan-500/30 text-cyan-400"
-                      >
-                        Azure
-                      </Badge>
+                      <Badge variant="outline" className="bg-blue-500/10 border-blue-500/30 text-blue-400">Power BI</Badge>
+                      <Badge variant="outline" className="bg-green-500/10 border-green-500/30 text-green-400">DAX</Badge>
+                      <Badge variant="outline" className="bg-purple-500/10 border-purple-500/30 text-purple-400">SQL Server</Badge>
+                      <Badge variant="outline" className="bg-orange-500/10 border-orange-500/30 text-orange-400">Power Query</Badge>
+                      <Badge variant="outline" className="bg-cyan-500/10 border-cyan-500/30 text-cyan-400">Azure</Badge>
                     </div>
                   </div>
 
                   {/* Impact Metrics */}
                   <div className="border-t border-border/50 pt-6">
-                    <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wide">
-                      Project Impact
-                    </h4>
+                    <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wide">Project Impact</h4>
                     <div className="grid grid-cols-3 gap-4">
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-cyan-400 mb-1">
-                          85%
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Faster Reporting
-                        </div>
+                        <div className="text-2xl font-bold text-cyan-400 mb-1">85%</div>
+                        <div className="text-xs text-muted-foreground">Faster Reporting</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-cyan-400 mb-1">
-                          15+
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Data Sources
-                        </div>
+                        <div className="text-2xl font-bold text-cyan-400 mb-1">15+</div>
+                        <div className="text-xs text-muted-foreground">Data Sources</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-cyan-400 mb-1">
-                          24/7
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Real-time Updates
-                        </div>
+                        <div className="text-2xl font-bold text-cyan-400 mb-1">24/7</div>
+                        <div className="text-xs text-muted-foreground">Real-time Updates</div>
                       </div>
                     </div>
                   </div>
@@ -595,10 +534,7 @@ export default function Index() {
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() =>
-                  (window.location.href =
-                    "mailto:kramekar1@gmail.com?subject=Portfolio%20Discussion")
-                }
+                onClick={() => window.location.href = 'mailto:kramekar1@gmail.com?subject=Portfolio%20Discussion'}
                 className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10"
               >
                 <Mail className="mr-2 h-4 w-4" />
