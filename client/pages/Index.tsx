@@ -401,6 +401,150 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Projects Section */}
+      <section
+        id="projects"
+        className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-muted/30 to-cyan-900/10"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold tracking-tight mb-4">
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
+                Featured Projects
+              </span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Showcasing advanced BI solutions and data visualizations that transform complex datasets into actionable business insights
+            </p>
+          </div>
+
+          <div className="space-y-12">
+            {/* Featured Project */}
+            <Card className="border-0 shadow-xl bg-card/60 backdrop-blur-sm overflow-hidden">
+              <div className="grid lg:grid-cols-2 gap-0">
+                {/* Project Image */}
+                <div className="relative group">
+                  <div className="aspect-video lg:aspect-square relative overflow-hidden bg-gradient-to-br from-cyan-500/10 to-blue-500/10">
+                    <img
+                      src="https://cdn.builder.io/o/assets%2F5d62d0bc8e4241838cbad68abffc672a%2Fac4f67301faf457c9f407a8fc8173f29?alt=media&token=09fdf5d0-ae10-414b-9e8e-c03a7526ab29&apiKey=5d62d0bc8e4241838cbad68abffc672a"
+                      alt="BI Dashboard Project"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  {/* Interactive overlay */}
+                  <div className="absolute top-4 right-4">
+                    <div className="flex gap-2">
+                      <div className="w-3 h-3 rounded-full bg-red-400 animate-pulse"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-400 animate-pulse animation-delay-300"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse animation-delay-500"></div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project Details */}
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+                      <Badge variant="secondary" className="bg-cyan-500/20 text-cyan-400 border-cyan-500/30">
+                        Power BI Dashboard
+                      </Badge>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-4 text-foreground">
+                      Advanced Business Intelligence Dashboard
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      A comprehensive BI solution featuring real-time data visualization, interactive filtering, and advanced analytics.
+                      Built with Power BI, this dashboard transforms complex business data into clear, actionable insights for
+                      executive decision-making.
+                    </p>
+                  </div>
+
+                  {/* Key Features */}
+                  <div className="mb-8">
+                    <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Key Features</h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="flex items-center gap-2 text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Real-time Data Integration</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Interactive Visualizations</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Advanced DAX Calculations</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Performance Optimization</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Row-Level Security</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+                        <span className="text-muted-foreground">Cross-Platform Integration</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="mb-8">
+                    <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Technologies Used</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline" className="bg-blue-500/10 border-blue-500/30 text-blue-400">Power BI</Badge>
+                      <Badge variant="outline" className="bg-green-500/10 border-green-500/30 text-green-400">DAX</Badge>
+                      <Badge variant="outline" className="bg-purple-500/10 border-purple-500/30 text-purple-400">SQL Server</Badge>
+                      <Badge variant="outline" className="bg-orange-500/10 border-orange-500/30 text-orange-400">Power Query</Badge>
+                      <Badge variant="outline" className="bg-cyan-500/10 border-cyan-500/30 text-cyan-400">Azure</Badge>
+                    </div>
+                  </div>
+
+                  {/* Impact Metrics */}
+                  <div className="border-t border-border/50 pt-6">
+                    <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wide">Project Impact</h4>
+                    <div className="grid grid-cols-3 gap-4">
+                      <div className="text-center">
+                        <div className="text-2xl font-bold text-cyan-400 mb-1">85%</div>
+                        <div className="text-xs text-muted-foreground">Faster Reporting</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-2xl font-bold text-cyan-400 mb-1">15+</div>
+                        <div className="text-xs text-muted-foreground">Data Sources</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-2xl font-bold text-cyan-400 mb-1">24/7</div>
+                        <div className="text-xs text-muted-foreground">Real-time Updates</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Additional Projects Teaser */}
+            <div className="text-center">
+              <p className="text-muted-foreground mb-6">
+                Want to see more of my BI and analytics work?
+              </p>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => window.location.href = 'mailto:kramekar1@gmail.com?subject=Portfolio%20Discussion'}
+                className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10"
+              >
+                <Mail className="mr-2 h-4 w-4" />
+                Let's Discuss My Work
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Voluntary Experience Section */}
       <section
         id="voluntary"
