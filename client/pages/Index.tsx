@@ -605,6 +605,27 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
+
+                  {/* GitHub Repository Button */}
+                  <div className="mt-4 pt-4 border-t border-border/50">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/kRamekar/Hourly_Occupancy",
+                          "_blank",
+                        )
+                      }
+                      className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 w-full"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      View Source Code
+                    </Button>
+                    <p className="text-xs text-muted-foreground mt-2 text-center">
+                      Clone and run locally on your computer to explore the full dashboard
+                    </p>
+                  </div>
                 </div>
               </div>
             </Card>
