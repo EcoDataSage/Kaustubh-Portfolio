@@ -1166,7 +1166,7 @@ export default function Index() {
                   size="sm"
                   onClick={() =>
                     window.open(
-                      "https://www.credly.com/badges/your-badge-link",
+                      "https://www.credly.com/badges/9e1f6d58-6ce5-4387-8b13-4023e229e778?source=linked_in_profile",
                       "_blank",
                     )
                   }
