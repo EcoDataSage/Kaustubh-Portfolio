@@ -109,7 +109,7 @@ export default function Index() {
         "Led requirements gathering sessions with business users and stakeholders",
         "Designed and optimised semantic data models within Power BI following industry best practices",
         "Developed dynamic dashboards delivering actionable intelligence across Finance, Sales, and Operations",
-        "Optimized Power BI performance by refining data models and tuning DAX expressions",
+        "Optimised Power BI performance by refining data models and tuning DAX expressions",
         "Ensured data governance and security compliance with access controls and role-level security",
       ],
     },
