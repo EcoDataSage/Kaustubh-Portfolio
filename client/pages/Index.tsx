@@ -1250,7 +1250,7 @@ export default function Index() {
       <section id="blog" className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Blog</h2>
-          <div className="max-w-4xl">
+          <div className="space-y-8 max-w-4xl">
             <Card className="border-0 shadow-sm bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
               <CardHeader>
                 <div className="flex items-center gap-3 mb-3">
@@ -1289,6 +1289,59 @@ export default function Index() {
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Learn More
                 </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-sm bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-3 h-3 rounded-full bg-orange-400"></div>
+                  <Badge
+                    variant="secondary"
+                    className="bg-orange-500/20 text-orange-400 border-orange-500/30"
+                  >
+                    AWS Blog
+                  </Badge>
+                </div>
+                <CardTitle className="text-2xl font-bold">
+                  kAWStubh
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  kAWStubh is my blog focused on AWS technologies. I share insights from tech talks, user group meetups,
+                  and personal explorations in the AWS ecosystem. It's a space where cloud knowledge and community learning come together.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() =>
+                      window.open(
+                        "https://medium.com/@kAWStubh",
+                        "_blank",
+                      )
+                    }
+                    className="border-orange-400/50 text-orange-400 hover:bg-orange-400/10"
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Learn More
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() =>
+                      window.open(
+                        "https://www.meetup.com/awsuguk/events/",
+                        "_blank",
+                      )
+                    }
+                    className="border-orange-400/50 text-orange-400 hover:bg-orange-400/10"
+                  >
+                    <Users className="mr-2 h-4 w-4" />
+                    Register
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
