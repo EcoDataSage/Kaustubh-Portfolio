@@ -1246,6 +1246,55 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Blog Section */}
+      <section id="blog" className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Blog</h2>
+          <div className="max-w-4xl">
+            <Card className="border-0 shadow-sm bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-3 h-3 rounded-full bg-blue-400"></div>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-500/20 text-blue-400 border-blue-500/30"
+                  >
+                    Tech Blog
+                  </Badge>
+                </div>
+                <CardTitle className="text-2xl font-bold">
+                  Tech Phlow
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Tech Phlow is my blog where I share technical insights, thoughts, and learnings in the world of technology.
+                  The name blends "Tech" (technology) with "Phlow", inspired by Mihaly Csikszentmihalyi's concept of{' '}
+                  <span className="font-medium text-foreground italic">flow</span>, the state of deep focus and creativity.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  It's where I explore the tools, ideas, and trends shaping the tech world, all written to spark thought and stay in flow.
+                </p>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() =>
+                    window.open(
+                      "https://techphlow.medium.com/",
+                      "_blank",
+                    )
+                  }
+                  className="border-blue-400/50 text-blue-400 hover:bg-blue-400/10"
+                >
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section
         id="contact"
