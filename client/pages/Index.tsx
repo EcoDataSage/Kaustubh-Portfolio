@@ -522,7 +522,7 @@ export default function Index() {
                       <div className="flex items-center gap-2 text-xs">
                         <div className="w-1 h-1 rounded-full bg-cyan-400"></div>
                         <span className="text-muted-foreground">
-                          Interactive Visualizations
+                          Interactive Visualisations
                         </span>
                       </div>
                       <div className="flex items-center gap-2 text-xs">
