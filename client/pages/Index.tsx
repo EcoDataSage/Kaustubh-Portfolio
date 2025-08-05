@@ -501,8 +501,8 @@ export default function Index() {
                       Visit Trend Dashboard
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                      Comprehensive BI solution for analyzing website visit
-                      patterns with real-time data visualization, interactive
+                      Comprehensive BI solution for analysing website visit
+                      patterns with real-time data visualisation, interactive
                       filtering, and advanced trend analysis.
                     </p>
                   </div>
