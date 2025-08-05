@@ -189,7 +189,7 @@ export default function Index() {
                 href="#blog"
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
-                Blog
+                Blogs
               </a>
               <a
                 href="#contact"
