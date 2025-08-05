@@ -37,7 +37,7 @@ export default function Index() {
   }, [darkMode]);
 
   const skills = {
-    "Analytics & Visualization": {
+    "Analytics & Visualisation": {
       icon: <BarChart3 className="w-5 h-5" />,
       items: ["Microsoft Power BI", "Excel", "Python", "Microsoft Azure"],
     },
@@ -65,7 +65,7 @@ export default function Index() {
       title: "BI & Test Analyst",
       company: "PineVox – Pioneers Global Services",
       location: "London",
-      period: "Dec. 2024 – Present",
+      period: "Dec. 2024 ��� Present",
       highlights: [
         "Collaborated closely with clients to understand reporting requirements and business objectives",
         "Expert in Power BI toolset, including DAX, Power Query, Power BI Desktop, and Power BI Service",
