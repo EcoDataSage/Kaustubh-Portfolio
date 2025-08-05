@@ -180,6 +180,12 @@ export default function Index() {
                 Education
               </a>
               <a
+                href="#awards"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Awards
+              </a>
+              <a
                 href="#contact"
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
