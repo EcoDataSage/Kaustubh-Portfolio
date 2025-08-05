@@ -699,7 +699,7 @@ export default function Index() {
                       Master Sales Dashboard
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                      Interactive dashboard analyzing sales performance across
+                      Interactive dashboard analysing sales performance across
                       multiple dimensions including total revenue, units sold,
                       sales trends, and regional customer segmentation.
                     </p>
