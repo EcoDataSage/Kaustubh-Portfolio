@@ -940,7 +940,7 @@ export default function Index() {
                       View Source Code
                     </Button>
                     <p className="text-xs text-muted-foreground mt-2 text-center">
-                      Customize for your growth metrics and KPIs
+                      Customise for your growth metrics and KPIs
                     </p>
                   </div>
                 </div>
