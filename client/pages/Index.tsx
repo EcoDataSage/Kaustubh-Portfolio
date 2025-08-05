@@ -776,7 +776,7 @@ export default function Index() {
                       View Source Code
                     </Button>
                     <p className="text-xs text-muted-foreground mt-2 text-center">
-                      Download and customize with your sales data
+                      Download and customise with your sales data
                     </p>
                   </div>
                 </div>
