@@ -271,9 +271,9 @@ export default function Index() {
             <h2 className="text-3xl font-bold tracking-tight mb-8">About</h2>
             <div className="prose prose-neutral dark:prose-invert max-w-none">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I specialize in bridging the gap between complex data and
+                I specialise in bridging the gap between complex data and
                 strategic business decisions. My expertise lies in creating
-                sophisticated Power BI solutions, optimizing SQL databases, and
+                sophisticated Power BI solutions, optimising SQL databases, and
                 developing Python-based analytics that scale with business
                 growth.
               </p>
