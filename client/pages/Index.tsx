@@ -1225,7 +1225,7 @@ export default function Index() {
                   size="sm"
                   onClick={() =>
                     window.open(
-                      "https://www.credly.com/badges/your-placement-badge-link",
+                      "https://www.credly.com/badges/23328e45-f847-4c7f-be4c-f37d1041c607?source",
                       "_blank",
                     )
                   }
