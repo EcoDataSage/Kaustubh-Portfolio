@@ -279,7 +279,7 @@ export default function Index() {
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Every dashboard I build tells a story that matters, helping
-                organizations across multiple industries make data-driven
+                organisations across multiple industries make data-driven
                 decisions that drive innovation and growth.
               </p>
             </div>
