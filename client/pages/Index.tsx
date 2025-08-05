@@ -71,7 +71,7 @@ export default function Index() {
         "Expert in Power BI toolset, including DAX, Power Query, Power BI Desktop, and Power BI Service",
         "Designed and implemented scalable data models using star/snowflake schemas",
         "Developed complex ETL workflows leveraging Power Query and integrated SQL Server",
-        "Optimized DAX expressions and Power BI data models for performance and usability",
+        "Optimised DAX expressions and Power BI data models for performance and usability",
         "Published and maintained Power BI reports with scheduled refresh and row-level security (RLS)",
       ],
     },
