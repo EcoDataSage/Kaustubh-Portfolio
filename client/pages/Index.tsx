@@ -83,7 +83,7 @@ export default function Index() {
       highlights: [
         "Designed and developed interactive dashboards and reports using Microsoft Power BI",
         "Collaborated with cross-functional teams to gather BI requirements and deliver tailored solutions",
-        "Built robust data models using Power BI Desktop, optimizing DAX queries",
+        "Built robust data models using Power BI Desktop, optimising DAX queries",
         "Integrated diverse data sources (SQL Server, Excel, Azure, SharePoint) into unified reporting layer",
         "Implemented row-level security (RLS) and governance practices for secure data access",
         "Led end-to-end BI project lifecycle from requirement gathering to dashboard deployment",
