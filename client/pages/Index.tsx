@@ -65,7 +65,7 @@ export default function Index() {
       title: "BI & Test Analyst",
       company: "PineVox – Pioneers Global Services",
       location: "London",
-      period: "Dec. 2024 ��� Present",
+      period: "Dec. 2024 – Present",
       highlights: [
         "Collaborated closely with clients to understand reporting requirements and business objectives",
         "Expert in Power BI toolset, including DAX, Power Query, Power BI Desktop, and Power BI Service",
@@ -415,7 +415,7 @@ export default function Index() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Showcasing advanced BI solutions and data visualizations that
+              Showcasing advanced BI solutions and data visualisations that
               transform complex datasets into actionable business insights
             </p>
           </div>
