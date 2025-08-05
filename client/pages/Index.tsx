@@ -1116,8 +1116,9 @@ export default function Index() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Awards</h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-4xl">
-            Recognition for outstanding achievements in intrapreneurial thinking and innovation,
-            demonstrating commitment to entrepreneurial excellence and practical business problem-solving.
+            Recognition for outstanding achievements in intrapreneurial thinking
+            and innovation, demonstrating commitment to entrepreneurial
+            excellence and practical business problem-solving.
           </p>
           <div className="space-y-8 max-w-4xl">
             <Card className="border-0 shadow-sm bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
@@ -1135,37 +1136,49 @@ export default function Index() {
                   SETsquared IKEEP – Intrapreneurial Training Award
                 </CardTitle>
                 <CardDescription className="text-base font-medium text-amber-400">
-                  Issued by: Badge Nation | Organised by: SETsquared Partnership & University of Exeter
+                  Issued by: Badge Nation | Organised by: SETsquared Partnership
+                  & University of Exeter
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I completed the IKEEP Intrapreneurial Training Programme, an immersive series of workshops
-                  focused on developing entrepreneurial skills for driving innovation within organisations.
-                  Through over 8 hours of interactive sessions, I gained practical knowledge in:
+                  I completed the IKEEP Intrapreneurial Training Programme, an
+                  immersive series of workshops focused on developing
+                  entrepreneurial skills for driving innovation within
+                  organisations. Through over 8 hours of interactive sessions, I
+                  gained practical knowledge in:
                 </p>
                 <div className="space-y-2 mb-6">
                   <div className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-2.5 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Intrapreneurship & Innovation Thinking</span>
+                    <span className="text-muted-foreground">
+                      Intrapreneurship & Innovation Thinking
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-2.5 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Business Model Design & Value Creation</span>
+                    <span className="text-muted-foreground">
+                      Business Model Design & Value Creation
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-2.5 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Structured Problem Solving</span>
+                    <span className="text-muted-foreground">
+                      Structured Problem Solving
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-2.5 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Team Collaboration & Digital Communication</span>
+                    <span className="text-muted-foreground">
+                      Team Collaboration & Digital Communication
+                    </span>
                   </div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  The training helped me build a strong foundation in how to approach complex business
-                  challenges with an entrepreneurial mindset, preparing me to contribute effectively in
-                  fast-paced, innovation-driven environments.
+                  The training helped me build a strong foundation in how to
+                  approach complex business challenges with an entrepreneurial
+                  mindset, preparing me to contribute effectively in fast-paced,
+                  innovation-driven environments.
                 </p>
                 <Button
                   variant="outline"
@@ -1199,32 +1212,44 @@ export default function Index() {
                   SETsquared IKEEP – Intrapreneurial Project Placement Award
                 </CardTitle>
                 <CardDescription className="text-base font-medium text-emerald-400">
-                  Issued by: Badge Nation | Organised by: SETsquared Partnership & University of Exeter
+                  Issued by: Badge Nation | Organised by: SETsquared Partnership
+                  & University of Exeter
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Following the training, I completed a 70-hour intrapreneurial project placement,
-                  applying my learning to a live business challenge provided by a real organisation.
-                  As part of a cross-disciplinary team, I:
+                  Following the training, I completed a 70-hour intrapreneurial
+                  project placement, applying my learning to a live business
+                  challenge provided by a real organisation. As part of a
+                  cross-disciplinary team, I:
                 </p>
                 <div className="space-y-2 mb-6">
                   <div className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2.5 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Delivered practical solutions using innovation and consulting tools</span>
+                    <span className="text-muted-foreground">
+                      Delivered practical solutions using innovation and
+                      consulting tools
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2.5 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Strengthened skills in systems thinking, collaboration, and professional communication</span>
+                    <span className="text-muted-foreground">
+                      Strengthened skills in systems thinking, collaboration,
+                      and professional communication
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2.5 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Gained real-world experience in solving business problems under deadlines</span>
+                    <span className="text-muted-foreground">
+                      Gained real-world experience in solving business problems
+                      under deadlines
+                    </span>
                   </div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  This placement allowed me to bridge the gap between theory and practice and demonstrated
-                  how intrapreneurial thinking can bring value within an existing organisation.
+                  This placement allowed me to bridge the gap between theory and
+                  practice and demonstrated how intrapreneurial thinking can
+                  bring value within an existing organisation.
                 </p>
                 <Button
                   variant="outline"
@@ -1262,27 +1287,28 @@ export default function Index() {
                     Tech Blog
                   </Badge>
                 </div>
-                <CardTitle className="text-2xl font-bold">
-                  Tech Phlow
-                </CardTitle>
+                <CardTitle className="text-2xl font-bold">Tech Phlow</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Tech Phlow is my blog where I share technical insights, thoughts, and learnings in the world of technology.
-                  The name blends "Tech" (technology) with "Phlow", inspired by Mihaly Csikszentmihalyi's concept of{' '}
-                  <span className="font-medium text-foreground italic">flow</span>, the state of deep focus and creativity.
+                  Tech Phlow is my blog where I share technical insights,
+                  thoughts, and learnings in the world of technology. The name
+                  blends "Tech" (technology) with "Phlow", inspired by Mihaly
+                  Csikszentmihalyi's concept of{" "}
+                  <span className="font-medium text-foreground italic">
+                    flow
+                  </span>
+                  , the state of deep focus and creativity.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  It's where I explore the tools, ideas, and trends shaping the tech world, all written to spark thought and stay in flow.
+                  It's where I explore the tools, ideas, and trends shaping the
+                  tech world, all written to spark thought and stay in flow.
                 </p>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() =>
-                    window.open(
-                      "https://techphlow.medium.com/",
-                      "_blank",
-                    )
+                    window.open("https://techphlow.medium.com/", "_blank")
                   }
                   className="border-blue-400/50 text-blue-400 hover:bg-blue-400/10"
                 >
@@ -1303,24 +1329,21 @@ export default function Index() {
                     AWS Blog
                   </Badge>
                 </div>
-                <CardTitle className="text-2xl font-bold">
-                  kAWStubh
-                </CardTitle>
+                <CardTitle className="text-2xl font-bold">kAWStubh</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  kAWStubh is my blog focused on AWS technologies. I share insights from tech talks, user group meetups,
-                  and personal explorations in the AWS ecosystem. It's a space where cloud knowledge and community learning come together.
+                  kAWStubh is my blog focused on AWS technologies. I share
+                  insights from tech talks, user group meetups, and personal
+                  explorations in the AWS ecosystem. It's a space where cloud
+                  knowledge and community learning come together.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button
                     variant="outline"
                     size="sm"
                     onClick={() =>
-                      window.open(
-                        "https://medium.com/@kAWStubh",
-                        "_blank",
-                      )
+                      window.open("https://medium.com/@kAWStubh", "_blank")
                     }
                     className="border-orange-400/50 text-orange-400 hover:bg-orange-400/10"
                   >
