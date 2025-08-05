@@ -186,6 +186,12 @@ export default function Index() {
                 Awards
               </a>
               <a
+                href="#blog"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Blog
+              </a>
+              <a
                 href="#contact"
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
