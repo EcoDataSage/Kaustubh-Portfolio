@@ -45,9 +45,13 @@ export default function Index() {
       icon: <Code className="w-5 h-5" />,
       items: ["SQL", "Python (Pandas, NumPy, Matplotlib)", "R (Shiny)"],
     },
-    Databases: {
+    "Databases & Cloud Data Platforms": {
       icon: <Database className="w-5 h-5" />,
-      items: ["Microsoft SQL Server", "MySQL"],
+      items: [
+        "Microsoft SQL Server",
+        "MySQL",
+        "AWS (Redshift, Athena, S3, QuickSight, Grafana)",
+      ],
     },
     "AI & Machine Learning": {
       icon: <Brain className="w-5 h-5" />,
