@@ -171,7 +171,7 @@ export default function Index() {
                 href="#voluntary"
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
-                Voluntary
+                Volunteer
               </a>
               <a
                 href="#education"
