@@ -71,7 +71,7 @@ export default function Index() {
       location: "London",
       period: "Dec. 2024 – Present",
       highlights: [
-        "Designed and developed interactive data visualizations, analytical dashboards, and performance reports leveraging advanced BI platforms.",
+        "Designed and developed interactive data visualisations, analytical dashboards, and performance reports leveraging advanced BI platforms.",
         "Partnered with cross-functional stakeholders to capture business intelligence requirements and translate them into scalable data solutions.",
         "Engineered and optimised semantic data models, ensuring efficient query performance through advanced calculation logic (DAX/MDX) and model tuning.",
         "Orchestrated data integration pipelines, consolidating heterogeneous sources (relational databases, cloud storage, enterprise applications, and collaboration platforms) into a unified reporting ecosystem.",
@@ -80,7 +80,7 @@ export default function Index() {
         "Utilised parameterisation, dynamic measures, and advanced filtering techniques to enable self-service analytics and enhance user interactivity.",
         "Applied performance tuning strategies, including query folding, model optimisation, and incremental refresh techniques to improve dashboard load times and scalability.",
         "Integrated automation and scheduling mechanisms to streamline report refresh cycles and reduce manual intervention.",
-        "Collaborated with IT and data engineering teams to establish data lineage, metadata documentation, and standardized reporting conventions for long-term maintainability.",
+        "Collaborated with IT and data engineering teams to establish data lineage, metadata documentation, and standardised reporting conventions for long-term maintainability.",
         "Architected and maintained cloud-based BI and data analytics solutions, leveraging services such as AWS to enable scalable, high-performance reporting environments.",
         "Expert in Power BI toolset, including DAX, Power Query, Power BI Desktop, and Power BI Service",
         "Published and maintained Power BI reports with scheduled refresh and row-level security (RLS)",
