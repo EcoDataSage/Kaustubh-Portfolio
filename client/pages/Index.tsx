@@ -83,7 +83,6 @@ export default function Index() {
         "Collaborated with IT and data engineering teams to establish data lineage, metadata documentation, and standardised reporting conventions for long-term maintainability.",
         "Architected and maintained cloud-based BI and data analytics solutions, leveraging services such as AWS to enable scalable, high-performance reporting environments.",
         "Expert in Power BI toolset, including DAX, Power Query, Power BI Desktop, and Power BI Service",
-        "Published and maintained Power BI reports with scheduled refresh and row-level security (RLS)",
       ],
     },
     {
