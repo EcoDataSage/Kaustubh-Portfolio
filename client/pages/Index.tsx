@@ -112,9 +112,10 @@ export default function Index() {
       location: "Exeter",
       period: "April 2021 – May 2021",
       highlights: [
-        "Conducted comprehensive analysis of R Package Dynamics assessing popularity and stability",
-        "Demonstrated proficiency in predictive modeling using caret and glmnet libraries",
-        "Received SETsquared IKEEP Intrapreneurial Project Experience Award for innovative problem solving",
+        "Conducted comprehensive analysis of R package dynamics, assessing trends in popularity, stability, and community adoption to inform strategic decisions.",
+        "Demonstrated proficiency in predictive modelling using the caret and glmnet libraries, applying regularisation techniques and cross-validation for model optimisation.",
+        "Performed exploratory data analysis (EDA) to identify key patterns, outliers, and feature relationships, supporting data preparation and hypothesis generation.",
+        "Documented analysis workflows and findings in reproducible R scripts and Markdown reports, ensuring transparency and ease of knowledge transfer.",
       ],
     },
     {
