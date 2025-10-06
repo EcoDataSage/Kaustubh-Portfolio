@@ -146,7 +146,8 @@ export default function Index() {
   ];
 
   const handleDownloadResume = () => {
-    const url = "https://drive.google.com/uc?export=download&id=1fuDP8gwjgR8hKdEfeWBVrRKualgKH25e";
+    const url =
+      "https://drive.google.com/uc?export=download&id=1fuDP8gwjgR8hKdEfeWBVrRKualgKH25e";
     const a = document.createElement("a");
     a.href = url;
     a.setAttribute("download", "Kaustubh_Ramekar_CV.pdf");
