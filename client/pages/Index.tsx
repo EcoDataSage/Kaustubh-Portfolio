@@ -146,10 +146,14 @@ export default function Index() {
   ];
 
   const handleDownloadResume = () => {
-    window.open(
-      "https://cdn.builder.io/api/v1/assets/5d62d0bc8e4241838cbad68abffc672a/kaustubh-ramekar-cv-09c360",
-      "_blank",
-    );
+    const url = "https://drive.google.com/uc?export=download&id=1fuDP8gwjgR8hKdEfeWBVrRKualgKH25e";
+    const a = document.createElement("a");
+    a.href = url;
+    a.setAttribute("download", "Kaustubh_Ramekar_CV.pdf");
+    a.setAttribute("rel", "noopener noreferrer");
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   };
 
   return (
