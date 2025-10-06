@@ -1414,7 +1414,7 @@ export default function Index() {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Phone size={20} />
-              <span>07572644863</span>
+              <span>07586470554</span>
             </div>
           </div>
 
