@@ -287,9 +287,9 @@ export default function Index() {
                 Download Resume
               </Button>
 
-              <Button asChild size="lg" className="bg-gradient-to-r from-[#0A66C2] to-sky-600 hover:from-[#0A66C2]/90 hover:to-sky-600/90 text-white">
+              <Button asChild size="lg" className="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700">
                 <a href="https://www.linkedin.com/in/kr28/" target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="mr-2 h-4 w-4" />
+                  <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </a>
               </Button>
