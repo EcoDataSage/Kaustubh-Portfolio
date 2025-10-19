@@ -22,6 +22,7 @@ import {
   Zap,
   ExternalLink,
   Github,
+  Linkedin,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -121,7 +122,7 @@ export default function Index() {
       title: "BD Analyst",
       company: "S&M International",
       location: "Pune",
-      period: "April 2018 ��� Sept. 2020",
+      period: "April 2018 – Sept. 2020",
       highlights: [
         "Led requirements gathering sessions with business users and stakeholders",
         "Designed and optimised semantic data models within Power BI following industry best practices",
