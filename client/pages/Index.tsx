@@ -121,7 +121,7 @@ export default function Index() {
       title: "BD Analyst",
       company: "S&M International",
       location: "Pune",
-      period: "April 2018 – Sept. 2020",
+      period: "April 2018 ��� Sept. 2020",
       highlights: [
         "Led requirements gathering sessions with business users and stakeholders",
         "Designed and optimised semantic data models within Power BI following industry best practices",
@@ -285,6 +285,14 @@ export default function Index() {
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </Button>
+
+              <Button asChild size="lg" className="bg-gradient-to-r from-[#0A66C2] to-sky-600 hover:from-[#0A66C2]/90 hover:to-sky-600/90 text-white">
+                <a href="https://www.linkedin.com/in/kr28/" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  LinkedIn
+                </a>
+              </Button>
+
               <Button
                 variant="outline"
                 size="lg"
