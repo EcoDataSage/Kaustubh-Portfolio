@@ -68,7 +68,7 @@ export default function Index() {
   const experiences = [
     {
       title: "BI & Test Analyst",
-      company: "PineVox – Pioneers Global Services",
+      company: "PineVox ��� Pioneers Global Services",
       location: "London",
       period: "Dec. 2024 – Present",
       highlights: [
@@ -973,7 +973,7 @@ export default function Index() {
                       size="sm"
                       onClick={() =>
                         window.open(
-                          "https://github.com/kRamekar/GrowthDashboard",
+                          "https://github.com/EcoDataSage/Growth_Dashboard",
                           "_blank",
                         )
                       }
