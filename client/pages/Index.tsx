@@ -809,7 +809,7 @@ export default function Index() {
                       size="sm"
                       onClick={() =>
                         window.open(
-                          "https://github.com/kRamekar/MasterSales",
+                          "https://github.com/EcoDataSage/Master_Sales",
                           "_blank",
                         )
                       }
